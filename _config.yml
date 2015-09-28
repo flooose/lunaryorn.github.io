@@ -11,6 +11,9 @@ author:
   twitter: "lunaryorn"
   github: "lunaryorn"
 
+github:
+  url: "https://github.com/lunaryorn/lunaryorn.github.io"
+
 # Build settings
 markdown: kramdown
 timezone: "Europe/Berlin"
