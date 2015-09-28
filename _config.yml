@@ -1,0 +1,21 @@
+name: lunarsite
+description: "Emacs.  What else?  A bit of Haskell probably…"
+url: "http://www.lunaryorn.com"
+
+baseurl: ""
+
+author:
+  name: "Sebastian Wiesner"
+  email: "me@lunaryorn.com"
+  uri: "http://www.lunaryorn.com"
+  twitter: "lunaryorn"
+  github: "lunaryorn"
+
+# Build settings
+markdown: kramdown
+timezone: "Europe/Berlin"
+encoding: "utf-8"
+exclude:
+  - "Rakefile"
+  - "Gemfile"
+  - "Gemfile.lock"
