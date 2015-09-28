@@ -1,0 +1,392 @@
+/* Basic typography styles */
+body {                          /* Body text */
+    font-family: "Vollkorn", serif;
+    font-size: 18px;
+    line-height: 1.35;
+    color: #444;
+    /* Standard font settings */
+    font-feature-settings: "onum", "kern", "liga", "clig", "dlig", "calt";
+    -webkit-font-feature-settings: "onum", "kern", "liga", "clig", "dlig", "calt";
+
+}
+
+.container {                    /* Page container */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+article {
+    margin-bottom: 15px;
+}
+
+p {                             /* Paragraphs */
+    margin: 0 0;
+    text-indent: 1.5em;
+}
+
+p:only-child {
+    text-indent: 0;
+}
+
+strong {
+    font-weight: 600;
+}
+
+ul, ol {
+    margin: 1em 4em;
+    padding: 0;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+small, sup {
+    font-size: 0.86em;
+}
+
+h1 small, h2 small, h3 small, h4 small {
+    font-weight: normal;
+    font-size: 0.65em;
+    line-height: 1;
+    color: #777;
+}
+
+blockquote {
+    margin: 1.2em 0;
+    padding: 0 2em;
+    line-height: 1.25;
+    font-size: 0.9em;
+    border-left: 5px solid #EEE;
+}
+
+a {                             /* Use sans-serif for links */
+    font-family: "Lato", sans-serif;
+    font-size: 0.93em;
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footnoteRef {                  /* Use body font for footnotes */
+    font-family: "Vollkorn", serif;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {                /* Text headings*/
+    font-family: "Vollkorn", sans-serif;
+    font-weight: 600;
+    line-height: 1;
+    color: #222;
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+    hyphens: none;
+    font-feature-settings: "salt", "lnum";
+    -webkit-font-feature-settings: "salt", "lnum";
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 0.2em;
+}
+
+h2 {
+    font-size: 1.1em;
+}
+
+h3 {
+    font-size: 1.05em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+.header-section-number {
+    margin-right: 0.5em;
+}
+
+.header-section-number:after {
+    content: "."
+}
+
+hr {
+    border-width: 1px;
+    border-color: #CCC;
+    border-style: none none solid;
+    margin: 1.35em 0;
+}
+
+/* Images and figures */
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+figure {
+    margin: 2em;
+}
+
+figcaption {
+    margin-top: 0.8em;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+figcaption:before {
+    content: "Figure.";
+    font-weight: 700;
+    margin-right: 0.5em;
+}
+
+/* Code and pre-formatted text */
+kbd, code {
+    font-family: "Source Code Pro", monospace;
+    font-size: 0.83em;
+}
+
+kbd {
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #FFF inset;
+    padding: 0 4px;
+}
+
+code {
+    padding: 0.11em 0.22em;
+}
+
+pre {
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+}
+
+pre code {
+    padding: 0;
+}
+
+/* Special components */
+.page-header {
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+}
+
+.post-info {
+    font-size: 0.83em;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+}
+
+.post-info p {
+    text-indent: 0;
+    margin-bottom: 0.25em;
+}
+
+.toc {                          /* Table of contents */
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    font-feature-settings: "salt", "lnum";
+    -webkit-font-feature-settings: "salt", "lnum";
+}
+
+.toc ul {
+    list-style: none inside none;
+    margin: 0;
+    padding: 0 0.5em;
+}
+
+.toc-title {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.toc-section-number {
+    margin-right: 0.5em;
+    float: left;
+}
+
+.toc-section-number:after {
+    content: ".";
+}
+
+.toc a {
+    font-family: "Vollkorn";
+}
+
+.navbar {                       /* Navigation */
+    border-bottom: 1px solid #ccc;
+    padding: 0.8em 0;
+}
+
+.navbar-header {
+    display: block;
+    text-align: center;
+}
+
+.navbar-brand {
+    display: inline-block;
+}
+
+.navbar-nav {
+    display: block;
+    text-align: center;
+    list-style: outside none;
+    margin: 0;
+}
+
+.navbar-nav > li {
+    display: inline;
+}
+
+.navbar-nav > li:after {
+    content: " · "
+}
+
+.navbar-nav > li:last-child:after {
+    content: ""
+}
+
+.footnotes {                    /* Footnotes */
+    font-size: 0.86em;
+}
+
+.footnotes ol {
+    margin-left: 2em;
+}
+
+.footnotes li {
+    margin-bottom: 0.5em;
+}
+
+.footnotes p:first-child {
+    text-indent: 0;
+}
+
+.page-footer {                  /* Footer */
+    border-top: 1px solid #CCC;
+    margin-top: 5rem;
+    padding: 0.5rem;
+    font-size: 0.86em;
+}
+
+.page-footer p {
+    text-indent: 0;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.post-list {                    /* Post lists */
+    list-style: outside none none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.post-list-item {
+    margin-bottom: 1em;
+}
+
+.post-list-date, .post-list-short-date {
+    font-size: 0.83em;
+    width: 25%;
+    display: block;
+    float: left;
+    text-align: right;
+    margin-top: 0.5em;
+}
+
+.post-list-date {
+    display: none;
+}
+
+.post-list-title {
+    margin-bottom: 0.2em;
+    display: block;
+    margin-left: 28%;
+}
+
+.post-list-tags {
+    display: block;
+    margin-left: 28%;
+    font-size: 0.83em;
+    font-style: italic;
+}
+
+.post-list-teaser {
+    display: none;
+    font-size: 0.83em;
+    margin-top: 0.5em;
+    margin-left: 28%;
+}
+
+/* Special media */
+@media print {                  /* Print */
+    .container {
+        width: auto;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .page-footer {
+        display: none;
+    }
+
+    .title {
+        margin-top: 0;
+    }
+
+    .post-list-date {
+        display: block;
+    }
+
+    .post-list-short-date {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 650px) {     /* Larger devices */
+    .container {
+        width: 600px;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar-header {
+        display: inline;
+        margin-right: 1.5em;
+        margin-left: 0.8em;
+    }
+
+    .navbar-nav {
+        display: inline;
+    }
+
+    .post-list-date {
+        display: block;
+    }
+
+    .post-list-short-date {
+        display: none;
+    }
+
+    .post-list-teaser {
+        display: block;
+    }
+}
