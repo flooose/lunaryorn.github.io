@@ -1,3 +1,6 @@
 # Bundled gems
 /.bundle/
 /_vendor/
+
+# Jekyll generated site
+/_site/
