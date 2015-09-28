@@ -1,0 +1,16 @@
+---
+layout: page
+---
+
+<div class="post-info">
+  <p>Posted on {{ page.date | date: "%B %-d, %Y" }} in {{ page.category }}</p>
+</div>
+
+{{ content }}
+<!-- $if(toc)$ -->
+<!-- <nav class="toc"> -->
+<!--   <span class="toc-title">Table of contents</span> -->
+<!--   $toc$ -->
+<!-- </nav> -->
+<!-- $endif$ -->
+<!-- $body$ -->

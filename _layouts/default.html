@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title | escape }} — {% endif %}{{site.name | escape }}</title>
+
+    <meta name="author" content="{{ page.author.name || site.author.name }}">
+    <meta name="description" content="{{ site.description | escape }}">
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    {% if page.twitter %}
+    <meta name="twitter:card" content="$twittercard$"/>
+    <meta name="twitter:site" content="@$siteTwitterHandle$"/>
+    <meta name="twitter:title" content="$escapeHtml(title)$"/>
+    <meta name="twitter:description" content="$escapeHtml(description)$"/>
+    <meta name="twitter:creator" content="@lunaryorn"/>
+    <meta name="twitter:url" content="$siteRoot$$url$"/>
+
+    $if(twittercardimage)$
+    <meta name="twitter:image:src" content="$siteRoot$$twittercardimage$"/>
+    $endif$
+    {% endif %}
+
+    <link rel="icon" sizes="16x16"   href="/icon-16.png">
+    <link rel="icon" sizes="32x32"   href="/icon-32.png">
+    <link rel="icon" sizes="96x96"   href="/icon-96.png">
+    <link rel="icon" sizes="196x196" href="/icon-196.png">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/fonts/fonts.css">
+    <link rel="stylesheet" href="/css/lunarsite.css">
+    <link rel="stylesheet" href="/css/solarized.css">
+
+    <link rel="copyright" href="/licensing.html">
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/index.html">
+            <img src="/logo.png">
+          </a>
+        </div>
+        <ul class="navbar-nav">
+          <li><a href="/archive.html">Archive</a></li>
+          <li><a href="/pages/emacs.html">Emacs</a></li>
+          <li><a href="/pages/colophon.html">Colophon</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div id="content">
+        {{ content }}
+      </div>
+      <footer class="page-footer">
+        <p>
+          <a href="/archive.html">Archive</a>
+          · <a href="/feed.atom">Feed</a>
+          · <a href="{{ site.github.url }}blob/master/{{page.path}}">Source on Github</a>
+        </p>
+        <p>
+           Powered by
+           <a target="_blank" href="http://www.gnu.org/software/emacs/">Emacs</a>,
+           <a target="_blank" href="http://jaspervdj.be/hakyll/">Hakyll</a>,
+           <a target="_blank" href="http://johnmacfarlane.net/pandoc/">Pandoc</a>, and
+           <a target="_blank" href="https://github.com">Github</a>
+           (<a href="/pages/colophon.html">colophon</a>).<br>
+        </p>
+        <p>
+           I'm on <a target="_blank" href="https://github.com/{{site.author.github }}">Github</a>,
+           <a target="_blank" href="https://twitter.com/{{ site.author.twitter }}">Twitter</a>, and
+           <a target="_blank" href="http://stackoverflow.com/users/355252/lunaryorn">Stack Overflow</a>.
+        </p>
+        <p>
+          <a rel="license"
+             href="http://creativecommons.org/licenses/by/4.0/">
+            <img alt="Creative
+                      Commons License" style="border-width:0"
+                 src="https://i.creativecommons.org/l/by/4.0/88x31.png"
+                 />
+          </a><br />
+          This work by <a xmlns:cc="http://creativecommons.org/ns#"
+          href="http://www.lunaryorn.com" property="cc:attributionName"
+          rel="cc:attributionURL">Sebastian Wiesner</a> is licensed under
+          a <a rel="license"
+          href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+          Attribution 4.0 International License</a>. Permissions beyond the
+          scope of this license may be available
+          at <a xmlns:cc="http://creativecommons.org/ns#"
+          href="http://www.lunaryorn.com/pages/licensing.html"
+          rel="cc:morePermissions">Licensing</a>.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

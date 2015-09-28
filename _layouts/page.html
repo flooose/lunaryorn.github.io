@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<article>
+  <header>
+    <h1 class="page-header">{{page.title|escape}}
+      {% if page.subtitle %}<small>{{page.subtitle | escape}}</small>{% endif%}
+    </h1>
+  </header>
+  {{content}}
+</article>
