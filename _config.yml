@@ -22,3 +22,9 @@ exclude:
   - "Rakefile"
   - "Gemfile"
   - "Gemfile.lock"
+
+kramdown:
+  auto_ids: true
+  auto_id_prefix: "section-"
+  header_offset: 1
+  smart_quotes: ["apos", "apos", "quot", "quot"]
