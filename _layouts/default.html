@@ -6,8 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title | escape }} — {% endif %}{{site.name | escape }}</title>
 
-    <meta name="author" content="{{ page.author.name || site.author.name }}">
-    <meta name="description" content="{{ site.description | escape }}">
+    {% if page.author.name %}
+    <meta name="author" content="{{ page.author.name }}">
+    {% else %}
+    <meta name="author" content="{{ site.author.name }}">
+    {% endif %}
+    {% if page.excerpt %}
+    <meta name="description" content="{{ page.excerpt | markdownify | strip_html }}">
+    {% else %}
+    <meta name="description" content="{{ site.description | strip_html }}">
+    {% endif %}
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
