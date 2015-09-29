@@ -1,6 +1,9 @@
 ---
 title: My Emacs
 layout: page
+excerpt: |
+  I use GNU Emacs for most of my daily work and maintain a couple of
+  Emacs packages.
 ---
 
 I use [GNU Emacs][] for most of my daily work.  You can find my configuration on

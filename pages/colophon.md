@@ -1,6 +1,9 @@
 ---
 title: Colophon
 layout: page
+excerpt: |
+  This blog is built with Jekyll and hosted on Github Pages.  The fonts are
+  Vollkorn, Lato and Source Code Pro.  The source code is available on Github.
 ---
 
 # Tooling

@@ -1,6 +1,10 @@
 ---
 title: Licensing
 layout: page
+excerpt: |
+  Except where otherwise noted this site is subject to the Creative Commons
+  Attribution 4.0 International license.  The fonts are subject to their
+  respective licenses.
 ---
 
 The fonts used on this site are subject to their respective licenses:
@@ -12,7 +16,7 @@ The fonts used on this site are subject to their respective licenses:
 - [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
   ([LICENSE Source Code Pro.txt](../fonts/LICENSE Source Code Pro.txt))
 
-Except where otherwise noted, this site is subject to the
+Except where otherwise noted this site is subject to the
 [Creative Commons Attribution 4.0 International][ccby] license.  A copy of this
 license follows.  It is also available at
 <http://creativecommons.org/licenses/by/4.0/legalcode>.
