@@ -23,6 +23,9 @@ exclude:
   - "Gemfile"
   - "Gemfile.lock"
   - "vendor"
+format:
+  date_long: "%B %-d, %Y"
+  date_short: "%b %d, %y"
 
 kramdown:
   auto_ids: true
