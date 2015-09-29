@@ -19,18 +19,7 @@
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-    {% if page.twitter %}
-    <meta name="twitter:card" content="$twittercard$"/>
-    <meta name="twitter:site" content="@$siteTwitterHandle$"/>
-    <meta name="twitter:title" content="$escapeHtml(title)$"/>
-    <meta name="twitter:description" content="$escapeHtml(description)$"/>
-    <meta name="twitter:creator" content="@lunaryorn"/>
-    <meta name="twitter:url" content="$siteRoot$$url$"/>
-
-    $if(twittercardimage)$
-    <meta name="twitter:image:src" content="$siteRoot$$twittercardimage$"/>
-    $endif$
-    {% endif %}
+    {% include twitter-card.html %}
 
     <link rel="icon" sizes="16x16"   href="/icon-16.png">
     <link rel="icon" sizes="32x32"   href="/icon-32.png">
