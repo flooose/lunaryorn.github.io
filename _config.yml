@@ -27,6 +27,12 @@ format:
   date_long: "%B %-d, %Y"
   date_short: "%b %d, %y"
 
+gems:
+  - jekyll-feed
+
+feed:
+  path: "feed.atom"
+
 kramdown:
   auto_ids: true
   auto_id_prefix: "section-"
