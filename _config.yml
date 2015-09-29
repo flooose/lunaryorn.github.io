@@ -26,6 +26,7 @@ exclude:
 format:
   date_long: "%B %-d, %Y"
   date_short: "%b %d, %y"
+excerpt_separator: "<!--more-->"
 
 gems:
   - jekyll-feed
