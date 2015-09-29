@@ -21,17 +21,17 @@
 require 'rake/clean'
 
 namespace :dev do
-  desc 'Install all dependencies to _vendor/'
+  desc 'Install all dependencies to vendor/'
   task :deps do
-    sh 'bundler', 'install', '--path', '_vendor', '--binstubs=_vendor/bin'
+    sh 'bundler', 'install', '--path', 'vendor', '--binstubs=vendor/bin'
   end
 
   CLOBBER << '.bundle'
-  CLOBBER << '_vendor'
+  CLOBBER << 'vendor'
   CLOBBER << '_site'
 
   desc 'Preview the site at http://localhost:4000'
   task :preview do
-    sh '_vendor/bin/jekyll', 'serve', '-w'
+    sh 'vendor/bin/jekyll', 'serve', '-w'
   end
 end
