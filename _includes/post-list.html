@@ -15,7 +15,7 @@
     {% if post.excerpt and include.include_excerpt %}
     <div class="post-list-teaser">
       <p>
-        {{ excerpt }}
+        {{ post.excerpt | markdownify }}
         <a href="">Read more…</a>
       </p>
     </div>
