@@ -1,5 +1,5 @@
 ---
-title: My Christmas present for fellow Emacs users:  Flycheck 0.22
+title: "My Christmas present for fellow Emacs users: Flycheck 0.22"
 published: 2014-12-23
 tags: emacs,flycheck
 ---
