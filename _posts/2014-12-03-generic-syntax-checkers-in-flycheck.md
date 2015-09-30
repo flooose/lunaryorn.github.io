@@ -54,7 +54,7 @@ syntax checker.  A generic syntax checker looks almost like a regular syntax
 checker, except there is a `:start` function instead of a `:command` and
 `:error-patterns`[^3]:
 
-```commonlisp
+```cl
 (flycheck-define-generic-checker 'ocaml-merlin
   "A syntax checker for OCaml using Merlin Mode.
 
@@ -91,7 +91,7 @@ just like it would invoke the `:command` of a command syntax checker.  The
 The `flycheck-ocaml-merlin-start` function of our new syntax checker looks as
 follows:
 
-```commonlisp
+```cl
 (defun flycheck-ocaml-merlin-start (checker callback)
   "Start a Merlin syntax check with CHECKER.
 
@@ -171,7 +171,7 @@ errors in the buffer, just like it does for regular command syntax checkers.
 `flycheck-ocaml-merlin-parse-error` extracts the relevant keys from each error
 list, and creates a new `flycheck-error` object:
 
-```commonlisp
+```cl
 (defun flycheck-ocaml-merlin-parse-error (alist checker buffer)
   "Parse a Merlin error ALIST from CHECKER in BUFFER into a `flycheck-error'.
 

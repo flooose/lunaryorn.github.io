@@ -33,7 +33,7 @@ the key map (for mouse support) and faces.
 We'll just copy the standard value, but replace `which-func-current` with our
 own function:
 
-```commonlisp
+```cl
 (setq which-func-format
       `("["
         (:propertize (:eval (lunaryorn-which-func-current))
@@ -78,7 +78,7 @@ which takes a lot of space, especially on small displays.
 
 Let's fix this, by truncating tag names to a maximum of 20 characters:
 
-```commonlisp
+```cl
 (require 'subr-x)
 
 (defun lunaryorn-which-func-current ()
@@ -122,7 +122,7 @@ the buffer file name, if any, unless the file name refers to `init.el`.  In this
 case we return the “namespace” used for functions in `init.el`, e.g. `lunaryorn`
 in this example:
 
-```commonlisp
+```cl
 (defun lunaryorn-current-namespace ()
   "Determine the namespace of the current file."
   (when-let (filename (buffer-file-name))
@@ -138,7 +138,7 @@ it with a nested `when`/`let` or with `-when-let` from [dash.el][].
 With this function, we can now extend `lunaryorn-which-func-current`
 accordingly:
 
-```commonlisp
+```cl
 (defun lunaryorn-which-func-current ()
   "Determine the name of the current function."
   (if-let (current (or (gethash (selected-window) which-func-table)))

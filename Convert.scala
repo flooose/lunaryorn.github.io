@@ -37,3 +37,8 @@ def cleanupHeaders(file: Path): Unit = {
     write.over(file, content.filter(l => !l.startsWith("published: ") && !l.startsWith("tags: ")) ++ Seq(""))
   }
 }
+
+def fixupCodeBlocks(file: Path): Unit = {
+  val content = read.lines(file)
+  write.over(file, content.map(_.replace("```commonlisp", "```cl")) ++ Seq(""))
+}

@@ -16,7 +16,7 @@ to set `bug-reference-url-format` to the URL of your bug tracker.
 
 For instance, I have the following `.dir-locals.el` for [Flycheck][]:
 
-```commonlisp
+```cl
 ((nil
   (bug-reference-url-format . "https://github.com/flycheck/flycheck/issues/%s"))
  (rst-mode
@@ -42,7 +42,7 @@ numbered group for the ID—one of the lesser known features of Emacs.
 
 Now all I am left to do is turn on `bug-reference-mode` in my `init.el`:
 
-```commonlisp
+```cl
 (add-hook 'text-mode-hook #'bug-reference-mode)
 (add-hook 'prog-mode-hook #'bug-reference-prog-mode)
 ```

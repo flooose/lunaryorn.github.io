@@ -30,7 +30,7 @@ Nowadays Emacs has a convenient `--script` option to load and evaluate a
 specific file[^1], but how to make a proper shebang out of it?  The naive
 attempt won't do:
 
-```commonlisp
+```cl
 #!/usr/bin/emacs --script
 (message "Hello world")
 ```
@@ -42,7 +42,7 @@ typically installed via Homebrew at `/usr/local/bin/emacs`.
 
 Normally, we'd accommodate these differences with `/usr/bin/env`:
 
-```commonlisp
+```cl
 #!/usr/bin/env emacs --script
 (message "Hello world")
 ```
@@ -97,7 +97,7 @@ We can opt out of the global site initialization by adding `--quick` to the
 `emacs` options of our script, which gives us a bare-bones Emacs without any
 initialization:
 
-```commonlisp
+```cl
 #!/bin/sh
 ":"; exec emacs --quick --script "$0" "$@" # -*- mode: emacs-lisp; lexical-binding: t; -*-
 (message "Hello world")
@@ -106,7 +106,7 @@ initialization:
 If you need to, you can still load the global site initialization *explicitly*
 from [site-run-file](el-variable:site-run-file):
 
-```commonlisp
+```cl
 (load site-run-file 'no-error 'no-message)
 ```
 
@@ -119,7 +119,7 @@ Processing command line arguments
 Emacs exposes the command line arguments in
 [command-line-args-left](el-variable:command-line-args-left) alias `argv`[^3]:
 
-```commonlisp
+```cl
 #!/bin/sh
 ":"; exec emacs --quick --script "$0" "$@" # -*- mode: emacs-lisp; lexical-binding: t; -*-
 
@@ -151,7 +151,7 @@ in order of their appearance.  After processing, each argument is *removed* from
 Since `command-line-args-left` aka `argv` is a global variable, we can just
 remove all remaining arguments from `argv` before our script exits:
 
-```commonlisp
+```cl
 #!/bin/sh
 ":"; exec emacs --quick --script "$0" "$@" # -*- mode: emacs-lisp; lexical-binding: t; -*-
 
@@ -167,7 +167,7 @@ Hello: ("--greeting" "Good morning %s!" "John Doe")
 Alternatively, we can also just force Emacs to exit early, which is good style
 anyway:
 
-```commonlisp
+```cl
 #!/bin/sh
 ":"; exec emacs --quick --script "$0" "$@" # -*- mode: emacs-lisp; lexical-binding: t; -*-
 
@@ -194,7 +194,7 @@ Emacs printed its own version and exited before our script even saw the
 separate Emacs options from arguments, so that our script can unaffectedly
 process what Emacs now considers mere arguments[^4]:
 
-```commonlisp
+```cl
 #!/bin/sh
 ":"; exec emacs --quick --script "$0" -- "$@" # -*- mode: emacs-lisp; lexical-binding: t; -*-
 
@@ -214,7 +214,7 @@ Typically, you'll process all arguments in a loop, `pop`ing each argument as it
 is processed.  Initially, you need to pop the first argument to remove the
 argument separator:
 
-```commonlisp
+```cl
 #!/bin/sh
 ":"; exec emacs --quick --script "$0" -- "$@" # -*- mode: emacs-lisp; lexical-binding: t; -*-
 
@@ -285,7 +285,7 @@ formatting and quoting.  And naturally the unquoted “printed representation”
 a string is… the string itself, so we can use this function to print a list of
 names to standard output:
 
-```commonlisp
+```cl
 #!/bin/sh
 ":"; exec emacs --quick --script "$0" "$@" # -*-emacs-lisp-*-
 
@@ -312,7 +312,7 @@ We have covered standard output now, but what about standard input?  There are
 no obvious input functions in Emacs Lisp, but the minibuffer reads from standard
 input in batch mode[^5]:
 
-```commonlisp
+```cl
 #!/bin/sh
 ":"; exec emacs --quick --script "$0" "$@" # -*-emacs-lisp-*-
 
@@ -356,7 +356,7 @@ By default, Emacs' error reporting is pretty terse, in interactive mode as well
 as in batch mode:  It just prints the error message, without any backtraces.
 Consider this script, which has a little type error inside:
 
-```commonlisp
+```cl
 #!/bin/sh
 ":"; exec emacs --quick --script "$0" "$@" # -*-emacs-lisp-*-
 
@@ -378,7 +378,7 @@ creates a backtrace if an error occurs.
 In batch mode, we can't “retry”, though, so we need to enable backtraces right
 away, by setting [debug-on-error](el-variable:debug-on-error):
 
-```commonlisp
+```cl
 #!/bin/sh
 ":"; exec emacs --quick --script "$0" "$@" # -*-emacs-lisp-*-
 

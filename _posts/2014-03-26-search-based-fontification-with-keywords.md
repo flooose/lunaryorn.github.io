@@ -33,13 +33,13 @@ some quite essential prerequisites first:
 2. Familiarize yourself with the [`rx`][rx] macro.  We'll use it to turn
    regexp-monsters like this[^1]:
 
-    ```commonlisp
+    ```cl
     "\\(/\\(?:[^\n/\\]\\|\\\\.\\)*/\\)"
     ```
 
     into readable and commented sexps like this:
 
-    ```commonlisp
+    ```cl
     (rx (group
          ;; A regular expression literal is delimited by
          ;; slashes
@@ -66,7 +66,7 @@ some quite essential prerequisites first:
    syntax, either with <kbd>C-c TAB</kbd> in re-builder, or by adding the
    following to your `init.el`:
 
-    ```commonlisp
+    ```cl
     (eval-after-load 're-builder '(setq reb-re-syntax 'rx))
     ```
 
@@ -81,7 +81,7 @@ We declare a variable to store the keywords, and tell Emacs to look for keywords
 in this variable, by setting [`font-lock-defaults`][fld] in our major mode
 definition:
 
-```commonlisp
+```cl
 (defconst puppet-font-lock-keywords nil
   "Font lock keywords for Puppet Mode.")
 
@@ -127,7 +127,7 @@ highlight.
 The following is a little excerpt of the actual font lock keywords used by
 Puppet Mode[^3]:
 
-```commonlisp
+```cl
 (defconst puppet-font-lock-keywords
   `(
     ;; Regular expression literals
@@ -337,7 +337,7 @@ regular expressions from strings or constants.
 For this purpose, we define a custom face with the name
 `puppet-regular-expression-literal`, using [`defface`][defface]:
 
-```commonlisp
+```cl
 (defface puppet-regular-expression-literal
   '((t :inherit font-lock-constant-face))
   "Face for regular expression literals in Puppet."

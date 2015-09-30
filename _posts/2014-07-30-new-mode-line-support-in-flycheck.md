@@ -22,7 +22,7 @@ Like every other mode in Emacs, Flycheck has a mode line “lighter” that
 indicates the mode in the mode line.  For most minor modes, the ligher is just a
 simple string, for instance in [Emacs Lisp Slime Nav][]:
 
-```commonlisp
+```cl
 (define-minor-mode elisp-slime-nav-mode
   "Enable Slime-style navigation of elisp symbols using M-. and M-,"
   :init-value
@@ -35,7 +35,7 @@ should report the number of errors and warnings in the mode line, as well as the
 general state of its syntax checking.  Fortunately, mode line lighters can also
 be variables:
 
-```commonlisp
+```cl
 (define-minor-mode flycheck-mode
   "Minor mode for on-the-fly syntax checking."
   :init-value nil
@@ -59,7 +59,7 @@ current buffer changed.  For instance, after a syntax check Flycheck called
 `flycheck-report-error-count` with all errors in the current buffer to update
 the mode line with the amount of errors and warnings:
 
-```commonlisp
+```cl
 (defun flycheck-report-status (status)
   "Report Flycheck STATUS."
   (setq flycheck-mode-line (concat flycheck-mode-line-lighter status))
@@ -95,7 +95,7 @@ Since commit [2d15110][] `flycheck-mode-line` is now a customizable mode line
 construct, whose default value is an `(:eval FORM)` construct that creates the
 same mode line text as before:
 
-```commonlisp
+```cl
 (defcustom flycheck-mode-line
   '(:eval (flycheck-mode-line-status-text))
   "Mode line lighter for Flycheck."
@@ -114,7 +114,7 @@ function `flycheck-mode-line-status-text`, which returns a human-readable status
 text for the current Flycheck status.  The functionality is still the same, but
 unlike before, it's now entirely customizable and even be completely disabled:
 
-```commonlisp
+```cl
 (defun flycheck-mode-line-status-text (&optional status)
   "Get a text describing STATUS for use in the mode line.
 
@@ -147,7 +147,7 @@ My personal Flycheck mode line
 To demonstrate what this enables you to do, I'd like to share my own mode line
 setup:
 
-```commonlisp
+```cl
 (setq flycheck-mode-line
       '(:eval
         (pcase flycheck-last-status-change

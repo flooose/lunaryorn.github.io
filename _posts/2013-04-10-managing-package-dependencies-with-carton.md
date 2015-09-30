@@ -34,7 +34,7 @@ configuration files with `(package-install)` calls.
 To use Carton in your personal Emacs configuration, create a file
 `~/.emacs.d/Carton`.  A simple `Carton` file looks like this:
 
-```commonlisp
+```cl
 (source "melpa" "http://melpa.milkbox.net/packages/")
 
 (depends-on "solarized-theme")
@@ -92,7 +92,7 @@ with a `load-path` that includes all locally installed packages.
 
 Again you start with a `Carton` file, like the one of [Flycheck][] itself:
 
-```commonlisp
+```cl
 (source "melpa" "http://melpa.milkbox.net/packages/")
 
 (package-file "flycheck.el")

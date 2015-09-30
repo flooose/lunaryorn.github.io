@@ -23,7 +23,7 @@ from within Emacs:
 
 <!--more-->
 
-```commonlisp
+```cl
 (defvar lunaryorn-ansible-modules nil
   "Cache of all known Ansible modules.")
 
@@ -66,7 +66,7 @@ quite slow, the list of modules is cached in a variable.
 
 Let's bind this new command to a key:
 
-```commonlisp
+```cl
 (eval-after-load 'yaml-mode
   '(define-key yaml-mode-map (kbd "C-c h a") #'lunaryorn-ansible-doc))
 ```

@@ -56,7 +56,7 @@ arbitrary code during syntactic analyses as well.
 
 We register our custom function in the major mode definition:
 
-```commonlisp
+```cl
 (define-derived-mode puppet-mode prog-mode "Puppet" ()
   ;; …
   (set (make-local-variable 'syntax-propertize-function)
@@ -68,7 +68,7 @@ We register our custom function in the major mode definition:
 `puppet-syntax-propertize-function` will now be called during syntactic
 analyses.  In this function we search for variable interpolations in the buffer:
 
-```commonlisp
+```cl
 (defun puppet-syntax-propertize-function (start end)
   (let ((case-fold-search nil))
     (goto-char start)
@@ -140,7 +140,7 @@ In this function, we have access to the syntactic context *and* to the match
 data of our regular expression, and can proceed to inspect the syntactic
 context:
 
-```commonlisp
+```cl
 (defun puppet-syntax-propertize-interpolation ()
   (let* ((beg (match-beginning 0))
          (context (save-excursion (save-match-data (syntax-ppss beg)))))
@@ -184,7 +184,7 @@ keyword to match variable interpolations.  We fontify valid variable
 interpolations, i.e. those that occur inside double-quoted strings, as
 variables:
 
-```commonlisp
+```cl
 (defvar puppet-font-lock-keywords
   `(
     ;; …
@@ -210,7 +210,7 @@ In our matcher function `puppet-match-interpolation` we try to find the variable
 interpolations again, and restore the match data from the stored state to enable
 fontification:
 
-```commonlisp
+```cl
 (defun puppet-match-interpolation (limit)
   (let ((pos (next-single-char-property-change (point) 'puppet-interpolation
                                                nil limit)))

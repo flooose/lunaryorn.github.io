@@ -35,7 +35,7 @@ The overall appearance of the mode line is set up in the
 fiddling, mine now looks as follows, which corresponds to the screenshot
 above:
 
-```commonlisp
+```cl
 (setq-default mode-line-format
               '("%e" mode-line-front-space
                 ;; Standard info about the current buffer
@@ -91,7 +91,7 @@ The individual elements are taken from various [Mode Line Variables][], which
 you can customize individually, of course.  For instance, I'm using a more
 compact design for the current position:
 
-```commonlisp
+```cl
 (setq-default mode-line-position
               '((-3 "%p") (size-indication-mode ("/" (-4 "%I")))
                 " "
@@ -124,7 +124,7 @@ to work with a project.
 I define my own variable `lunaryorn-projectile-mode-line` which holds a
 construct that puts the name of the current project into the mode line:
 
-```commonlisp
+```cl
 (defvar lunaryorn-projectile-mode-line
   '(:propertize
     (:eval (when (ignore-errors (projectile-project-root))
@@ -176,7 +176,7 @@ construct that strips the backend name from the status.  I'm almost exclusively
 using Git, and if I'm not doing so, I'm usually absolutely aware of that, if
 only because Magit doesn't work in this case:
 
-```commonlisp
+```cl
 (defvar lunaryorn-vc-mode-line
   '(" " (:propertize
          ;; Strip the backend name from the VC status information

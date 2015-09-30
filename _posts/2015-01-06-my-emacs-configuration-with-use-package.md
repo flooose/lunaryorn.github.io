@@ -23,7 +23,7 @@ The basics
 The idea of `use-package` is to wrap all initialisation and configuration of a
 package in a top-level form.  A typical use in my configuration looks like this:
 
-```commonlisp
+```cl
 (use-package whitespace
   :bind (("C-c T w" . whitespace-mode))
   :init
@@ -42,7 +42,7 @@ for the [diminish][] utility which removes minor modes from the mode line.
 Now compare this to the same code *without* `use-package`, as it would appear in
 my init file before:
 
-```commonlisp
+```cl
 (global-set-key (kbd "C-c T w") #'whitespace-mode)
 
 (dolist (hook '(prog-mode-hook text-mode-hook conf-mode-hook))
@@ -71,7 +71,7 @@ a huge pain to track and install these manually whenever I remove the package
 directory or move to a new machine, but with `use-package` I don't have to[^1].
 `use-package` can automatically install missing packages:
 
-```commonlisp
+```cl
 (use-package imenu-anywhere
   :ensure t
   :bind (("C-c i" . imenu-anywhere)))
@@ -88,7 +88,7 @@ I still need to bootstrap `use-package` explicitly at the beginning of my init
 file, though.  This is not that pretty, but the obvious chicken-egg problem
 can't be avoided otherwise:
 
-```commonlisp
+```cl
 (require 'package)
 (setq package-enable-at-startup nil)
 (add-to-list 'package-archives
@@ -120,7 +120,7 @@ editing.  It sits in the `lisp/` subdirectory of my Emacs directory and is never
 installed with the package manager, but `use-package` lets me configure as if it
 were:
 
-```commonlisp
+```cl
 (use-package lunaryorn-simple
   :load-path "lisp/"
   :bind (([remap kill-whole-line]        . lunaryorn-smart-kill-whole-line)
@@ -170,7 +170,7 @@ load and enable.
 takes time to load and enable.  On the other hand, completion is not so
 important for me that I need it immediately, so I delay its initialisation:
 
-```commonlisp
+```cl
 (use-package company
   :ensure t
   :defer t

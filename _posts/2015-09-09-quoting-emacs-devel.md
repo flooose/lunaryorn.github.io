@@ -1,5 +1,8 @@
 ---
 title: Quoting emacs-devel
+excerpt: |
+    The issue of using curly quotes (`‘foo’`) in docstrings and other places
+    where Emacs has of old used ASCII quotes (`` `foo'``)
 ---
 
 I just came across this tweet by

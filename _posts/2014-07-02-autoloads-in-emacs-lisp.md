@@ -22,7 +22,7 @@ Autoloads are created with the [autoload](el-function:autoload) function.  An
 autoload for the function `magit-status` in the library `magit.el` would look
 like this:
 
-```commonlisp
+```cl
 (autoload 'magit-status "magit" "Open a Magit status buffer […]" t nil)
 ```
 
@@ -64,7 +64,7 @@ this process.
 corresponding definition.  An autoload cookie for `magit-status` looks like
 this:
 
-```commonlisp
+```cl
 ;;;###autoload
 (defun magit-status ()
   "Open a Magit status buffer […]"
@@ -123,7 +123,7 @@ points, you should add autoloads for these as well, to make sure that they are
 evaluated during package initialization.  A typical example is adding a mode to
 `auto-mode-alist`:
 
-```commonlisp
+```cl
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.pp\\'" . puppet-mode))
 ```
@@ -134,7 +134,7 @@ Mode is automatically used for all files ending in `.pp`.
 Likewise, colour themes use autoload cookies to add themselves to the color
 theme search path:
 
-```commonlisp
+```cl
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
   (add-to-list 'custom-theme-load-path
@@ -160,7 +160,7 @@ are directly created by the reader, or explicitly with
 To check whether `foo` refers to an autoloaded function you need to check the
 *function definition* of `foo`:
 
-```commonlisp
+```cl
 (autoloadp (function-definition 'foo))
 ```
 

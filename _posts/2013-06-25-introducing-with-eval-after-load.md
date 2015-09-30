@@ -6,7 +6,7 @@ At June, 13th Emacs trunk introduced a new macro with-eval-after-load in
 [r112976][].  It behaves like `eval-after-load`, except that it takes multiple
 unquoted forms and wraps them into a `lambda` to enable byte compilation:
 
-```commonlisp
+```cl
 (with-eval-after-load 'python
   (add-hook 'python-mode-hook #'subword-mode)
   (setq python-check-command "flake8"))
@@ -17,7 +17,7 @@ This supersedes much of my [last post][] about byte compilation in
 features during byte compilation, so I'll wrap my old `stante-after` macro
 around it to avoid bogus warnings, just like in the last post:
 
-```commonlisp
+```cl
 (defmacro stante-after (feature &rest forms)
   (declare (indent 1) (debug t))
   `(,(if (or (not byte-compile-current-file)

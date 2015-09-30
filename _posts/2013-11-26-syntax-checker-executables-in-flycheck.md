@@ -46,7 +46,7 @@ the definition of the syntax checker, or a string with the name or the path to
 an executable.  For instance, the following code is equivalent to the
 interactive command from the last section:
 
-```commonlisp
+```cl
 (setq flycheck-python-pylint-executable "pylint3")
 ```
 
@@ -65,7 +65,7 @@ Applications
   `python-shell-virtualenv-path` via directory local variables.  In this case,
   you can easily automate this with the following Emacs Lisp code:
 
-    ```commonlisp
+    ```cl
     (defun flycheck-python-set-executables ()
       (let ((exec-path (python-shell-calculate-exec-path)))
         (setq flycheck-python-pylint-executable (executable-find "pylint")

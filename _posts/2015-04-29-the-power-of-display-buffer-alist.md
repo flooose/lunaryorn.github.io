@@ -16,7 +16,7 @@ Emacs how to display a buffer with a matching name.  This sounds a little
 abstract at first, so let’s see this in action.  The following piece of code
 adds a mapping for [Flycheck][]’s error list:
 
-```commonlisp
+```cl
 (add-to-list 'display-buffer-alist
              `(,(rx bos "*Flycheck errors*" eos)
                (display-buffer-reuse-window
@@ -62,7 +62,7 @@ Studio or IntelliJ.
 
 I like to combine this feature with this little command:
 
-```commonlisp
+```cl
 (defun lunaryorn-quit-bottom-side-windows ()
   "Quit side windows of the current frame."
   (interactive)
