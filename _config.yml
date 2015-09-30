@@ -15,7 +15,7 @@ github:
   url: "https://github.com/lunaryorn/lunaryorn.github.io"
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 timezone: "Europe/Berlin"
 encoding: "utf-8"
 exclude:
@@ -34,11 +34,11 @@ gems:
 feed:
   path: "feed.atom"
 
-kramdown:
-  auto_ids: true
-  auto_id_prefix: "section-"
-  header_offset: 1
-  smart_quotes: ["apos", "apos", "quot", "quot"]
+redcarpet:
+  extensions:
+    - no_intra_emphasis
+    - tables
+    - footnotes
 
 defaults:
   - scope:
