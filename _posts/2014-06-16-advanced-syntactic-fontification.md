@@ -1,7 +1,5 @@
 ---
 title: Advanced syntactic fontification
-tags: emacs,fontification
-published: 2014-06-16
 ---
 
 This article concludes my series about [Font Locking in Emacs][font-lock] by

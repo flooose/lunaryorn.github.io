@@ -1,7 +1,5 @@
 ---
 title: TIL about Bug Reference Mode
-tags: emacs,package
-published: 2014-12-23
 ---
 
 There's not a day in which I don't find a new gem for Emacs.  Today it's the

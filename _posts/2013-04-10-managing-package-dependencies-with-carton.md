@@ -1,7 +1,5 @@
 ---
 title: Managing Package Dependencies with Carton
-tags: emacs,carton,cask
-published: 2013-04-10
 ---
 
 **Update** *(March 28, 2014)*: Carton was renamed to Cask some time ago.  All

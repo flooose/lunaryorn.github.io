@@ -1,7 +1,5 @@
 ---
 title: On Uberspace now
-tags: hosting,uberspace
-published: 2014-06-11
 ---
 
 A few days ago I moved this site from [Github Pages][] to [Uberspace][], a

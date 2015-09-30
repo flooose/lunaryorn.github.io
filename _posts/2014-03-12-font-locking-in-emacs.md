@@ -1,7 +1,5 @@
 ---
 title: Font Locking in Emacs
-tags: emacs,fontification
-published: 2014-03-12
 ---
 
 Font locking (aka syntax highlighting) is an essential part of any Emacs major

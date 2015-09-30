@@ -1,7 +1,5 @@
 ---
 title: My Emacs Configuration with use-package
-tags: emacs,configuration
-published: 2015-01-06
 ---
 
 In the past I used to keep my Emacs configuration completely in a single

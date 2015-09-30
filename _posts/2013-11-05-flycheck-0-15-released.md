@@ -1,7 +1,5 @@
 ---
 title: Flycheck 0.15 released
-published: 2013-11-05
-tags: emacs,flycheck
 ---
 
 I have the honour and pleasure to announce a new release of [Flycheck][], the

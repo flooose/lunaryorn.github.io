@@ -1,7 +1,5 @@
 ---
 title: Emacs StackExchange proposal
-tags: emacs
-published: 2014-09-14
 ---
 
 There is a [proposal][] for a separate Emacs site on the popular StackExchange

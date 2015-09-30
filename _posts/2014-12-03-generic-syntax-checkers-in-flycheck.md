@@ -1,7 +1,5 @@
 ---
 title: Generic syntax checkers in Flycheck
-tags: emacs,flycheck
-published: 2014-12-03
 ---
 
 In two years of maintaining Flycheck I received many wishes and feature

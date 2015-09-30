@@ -1,7 +1,5 @@
 ---
 title: Ansible Documention in Emacs
-tags: emacs,ansible
-published: 2014-07-18
 twittercard: summary_large_image
 twittercardimage: /images/ansible-doc.png
 ---

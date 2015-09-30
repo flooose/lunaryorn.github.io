@@ -1,7 +1,5 @@
 ---
 title: Make your Emacs Mode Line more useful
-tags: emacs,mode-line,customization
-published: 2014-07-26
 ---
 
 Customizing Emacs Mode Line was always some kind of black magic to me.  The

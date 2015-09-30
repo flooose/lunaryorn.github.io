@@ -1,7 +1,5 @@
 ---
 title: New Mode Line support in Flycheck
-tags: emacs,flycheck,mode-line
-published: 2014-07-30
 ---
 
 While [re-designing my Emacs mode line recently][mode-line], I realized that the

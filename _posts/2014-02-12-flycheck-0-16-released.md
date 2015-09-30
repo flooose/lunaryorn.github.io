@@ -1,7 +1,5 @@
 ---
 title: Flycheck 0.16 released
-tags: emacs,flycheck
-published: 2014-02-12
 ---
 
 Time for a new release of [Flycheck][], the modern syntax-checking extension for

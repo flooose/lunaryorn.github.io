@@ -1,7 +1,5 @@
 ---
 title: Half Year Anniversary of Flycheck
-tags: emacs,flycheck
-published: 2013-04-13
 ---
 
 While uploading the recent [0.9 release][1] of Flycheck, I realized that Flycheck

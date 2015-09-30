@@ -1,7 +1,5 @@
 ---
 title: Thoughts on elmarmalade
-tags: emacs,marmalade,package,elnode,melpa
-published: 2014-05-22
 ---
 
 On [May 19th][post], Nic Ferrier switched the grand old [Marmalade][] to his

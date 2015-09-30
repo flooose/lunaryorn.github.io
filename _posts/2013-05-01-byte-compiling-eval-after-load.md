@@ -1,7 +1,5 @@
 ---
 title: Byte-compiling eval-after-load
-tags: emacs,byte-compiler
-published: 2013-05-01
 ---
 
 If you use a recent build of Emacs trunk, be sure to read the [follow up][] on

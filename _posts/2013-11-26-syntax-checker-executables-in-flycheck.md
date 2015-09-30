@@ -1,7 +1,5 @@
 ---
 title: Syntax checker executables in Flycheck
-tags: emacs,flycheck
-published: 2013-11-26
 ---
 
 In the current release of Flycheck, the executable used by a syntax checker is

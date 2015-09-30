@@ -1,7 +1,5 @@
 ---
 title: Flycheck 0.20 out
-tags: emacs,flycheck
-published: 2014-08-12
 ---
 
 I'm proud to release Flycheck 0.20.  Highlights are new support for Ada and

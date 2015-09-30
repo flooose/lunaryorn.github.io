@@ -1,7 +1,5 @@
 ---
 title: Calling Python from Haskell
-tags: python,pygments,haskell,cabal,pandoc,ffi
-published: 2014-04-15
 ---
 
 Background

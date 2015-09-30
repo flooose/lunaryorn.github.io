@@ -29,3 +29,11 @@ def renamePostWithPublishedDate(file: Path): Unit = {
     mv(file, target)
   }
 }
+
+def cleanupHeaders(file: Path): Unit = {
+  val content = read.lines(file)
+  if (content.headOption.exists(_ == "---")) {
+    println(s"Cleaning ${file.last}")
+    write.over(file, content.filter(l => !l.startsWith("published: ") && !l.startsWith("tags: ")) ++ Seq(""))
+  }
+}

@@ -1,7 +1,5 @@
 ---
 title: Emacs script pitfalls
-tags: emacs
-published: 2014-08-12
 ---
 
 **Update** *(November 22, 2014)*: I fixed a fundamental flaw in the section

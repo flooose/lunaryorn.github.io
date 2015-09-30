@@ -1,7 +1,5 @@
 ---
 title: Autoloads in Emacs Lisp
-tags: emacs,autoloads
-published: 2014-07-02
 ---
 
 On Reddit a user asked [how to use autoloads in Emacs Lisp][reddit].  This post

@@ -1,7 +1,5 @@
 ---
 title: Configuring buffer display in Emacs
-tags: emacs,buffer,windows,customization
-published: 2015-04-29
 ---
 
 I guess every Emacs user knows this particular phenomenon: Windows constantly

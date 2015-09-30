@@ -1,7 +1,5 @@
 ---
 title: Unbreaking Marmalade
-published: 2014-03-28
-tags: emacs,package,marmalade,melpa,haskell
 ---
 
 **Update** *(June 16, 2014)*: Nic Ferrier's

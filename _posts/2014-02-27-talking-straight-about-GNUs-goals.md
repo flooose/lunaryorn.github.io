@@ -1,7 +1,5 @@
 ---
 title: Talking straight about GNU's goals
-tags: emacs,gnu,clang,gcc,fsf
-published: 2014-02-27
 ---
 In a recent post to the emacs-devel mailing list, RMS talked straight about the
 [goals of the GNU project][1]:

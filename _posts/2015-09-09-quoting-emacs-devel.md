@@ -1,7 +1,5 @@
 ---
 title: Quoting emacs-devel
-tags: emacs
-published: 2015-09-09
 ---
 
 I just came across this tweet by

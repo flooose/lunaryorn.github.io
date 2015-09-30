@@ -1,7 +1,5 @@
 ---
 title: Introducing with-eval-after-load
-tags: emacs
-published: 2013-06-25
 ---
 
 At June, 13th Emacs trunk introduced a new macro with-eval-after-load in

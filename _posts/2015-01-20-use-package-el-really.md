@@ -1,7 +1,5 @@
 ---
 title: Why package.el?
-tags: emacs,configuration,packages
-published: 2015-01-20
 ---
 
 Today, an Emacs user on Reddit asked

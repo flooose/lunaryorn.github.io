@@ -1,7 +1,5 @@
 ---
 title: Boosting Which Func Mode
-tags: emacs,mode-line
-published: 2014-09-13
 ---
 
 [Which Func Mode](el-function:which-func-mode) shows the name of the current
