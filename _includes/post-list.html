@@ -14,8 +14,8 @@
     </span>
     {% if post.excerpt and include.include_excerpt %}
     <div class="post-list-teaser">
+      {{ post.excerpt | markdownify }}
       <p>
-        {{ post.excerpt | markdownify }}
         <a href="">Read more…</a>
       </p>
     </div>
