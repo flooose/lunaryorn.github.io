@@ -39,6 +39,7 @@ redcarpet:
     - no_intra_emphasis
     - tables
     - footnotes
+    - with_toc_data
 
 defaults:
   - scope:
