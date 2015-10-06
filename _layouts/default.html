@@ -58,7 +58,9 @@
         <p>
           <a href="{{site.baseurl}}/archive.html">Archive</a>
           · <a href="{{site.baseurl}}/feed.atom">Feed</a>
-          · <a href="{{ site.github.url }}blob/master/{{page.path}}">Source on Github</a>
+          {% if page.path %}
+          · <a href="{{ site.github.url }}/blob/master/{{page.path}}">Source on Github</a>
+          {% endif %}
         </p>
         <p>
            Powered by
