@@ -139,8 +139,8 @@ Let use focus on the second callback—the error callback—first, for the sake 
 simplicity.  This callback just calls Flycheck's own callback with two
 arguments:
 
-1. The **status symbol**
-2. The **status metadata**
+1. The *status symbol*
+2. The *status metadata*
 
 These are the two components of the [“status protocol”][status] that Flycheck
 provides for generic syntax checkers to communicate with Flycheck.

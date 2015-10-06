@@ -61,7 +61,7 @@ respectively.  Let's define a syntax table that understands these strings:
     table)
   "Syntax table in use in `puppet-mode' buffers.")
 ```
-  
+
 [`make-syntax-table`][mst] creates a standard syntax table, to which we add our
 custom classifications with [`modify-syntax-entry`][mse].  This function takes
 three arguments:
@@ -74,7 +74,7 @@ three arguments:
 simple.  A descriptor is a string, where each character has a special meaning.
 In our example, the descriptors are simple two-character strings.
 
-The first character in this string defines the **syntax class** (see
+The first character in this string defines the *syntax class* (see
 [Syntax Class Table][]).  The quotation mark `"` denotes the “String quotes”
 class, i.e. characters which delimit strings.
 
@@ -93,7 +93,7 @@ modes) already does that for us!
 [mst]: el-function:make-syntax-table
 [mse]: el-function:modify-syntax-entry
 [Syntax Class Table]: http://www.gnu.org/software/emacs/manual/html_node/elisp/Syntax-Class-Table.html
-[Syntax Flags]: http://www.gnu.org/software/emacs/manual/html_node/elisp/Syntax-Flags.html 
+[Syntax Flags]: http://www.gnu.org/software/emacs/manual/html_node/elisp/Syntax-Flags.html
 [ddm]: el-function:define-derived-mode
 
 Escape characters
@@ -110,8 +110,8 @@ this with one extra entry in our syntax table:
 ```
 
 This entry puts the backslash into the “Escape characters” class (fittingly
-denoted by the backslash).  Now we are really done: With **just three entries**
-in our syntax table, Emacs correctly fontifies Puppet's string syntax!
+denoted by the backslash).  Now we are really done: With *just three entries* in
+our syntax table, Emacs correctly fontifies Puppet's string syntax!
 
 Comments
 ========
@@ -204,9 +204,9 @@ syntax table can easily cope with comments and strings in many programming
 languages.
 
 But as always, there are some limitations.  With the tiny exception of
-two-character comment sequences, syntax tables are **stateless**.  They only
-look at the character itself, and do not consider its position in a file or
-block or its adjacent characters.
+two-character comment sequences, syntax tables are *stateless*.  They only look
+at the character itself, and do not consider its position in a file or block or
+its adjacent characters.
 
 As such, whenever the syntactic properties of a character depend on adjacent
 characters, or on a specific position on a line, syntax tables are out of scope.

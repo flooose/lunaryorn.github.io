@@ -34,9 +34,9 @@ which are caught by the standard `bug-reference-bug-regexp`. The
 references, to make it easier to parse issue references out of the changelog.  A
 reference to the bug 111 will look like `[GH-111]`.
 
-Hence, I set `bug-reference-bug-regexp` for `rst-mode` (the changelog is
-written in in ReST) to match this format.  Note the peculiar `(?2:…)` grouping:
-For whatever mysterious reason, `bug-reference-mode` expects that the **second**
+Hence, I set `bug-reference-bug-regexp` for `rst-mode` (the changelog is written
+in in ReST) to match this format.  Note the peculiar `(?2:…)` grouping: For
+whatever mysterious reason, `bug-reference-mode` expects that the *second*(!)
 group in the regexp matches the issue ID.  Hence my regexp uses an explicitly
 numbered group for the ID—one of the lesser known features of Emacs.
 

@@ -5,23 +5,23 @@ In a recent post to the emacs-devel mailing list, RMS talked straight about the
 [goals of the GNU project][1]:
 
 > Remember that the main purpose of the GNU system – including GNU Emacs – is
-> freedom.  Technical progress and convenience are **secondary** goals.
+> freedom.  Technical progress and convenience are *secondary* goals.
 
 Of course, we knew that before, but this statement is remarkably clear, and
-tells us a **lot** about Emacs development: The primary goal of Emacs' umbrella
-project is **not** to provide us with a fully functional editor with superior
+tells us a *lot* about Emacs development: The primary goal of Emacs' umbrella
+project is *not* to provide us with a fully functional editor with superior
 features which support our daily work.  No, the primary goal is to defend our
 freedom…
 
 Incidentally, ironically this statement was *not* part of a discussion about
-proprietary software.  It was made in a discussion about which **free** software
-to use for C++ completion in Emacs:  Clang or GCC.
+proprietary software.  It was made in a discussion about which *free* software
+to use for C++ completion in Emacs: Clang or GCC.
 
 Clang has all the necessary features.  There are already working packages for
 C++ completion based on Clang.  Nonetheless RMS strictly rejected the idea of
 using Clang in Emacs, for no other reason than Clang's permissive BSD license,
-which has no copyleft. Again, Clang is **free software**, even by the FSF's own
-standards.  It's just **too** free for Emacs…
+which has no copyleft. Again, Clang is *free software*, even by the FSF's own
+standards.  It's just *too* free for Emacs…
 
 I don't think that this will lead us anywhere.  RMS fails to see that while his
 position maintains the ideological purity of GNU, it ultimately harms its own

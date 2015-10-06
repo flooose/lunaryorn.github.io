@@ -193,7 +193,7 @@ Ordering
 
 Font lock keywords are processed in order of appearance.  Each keyword will
 *not* match in text which is already fontified by syntactic fontification or
-earlier font lock keywords[^4].  Hence **the order of keywords matters**.
+earlier font lock keywords[^4].  Hence *the order of keywords matters*.
 
 For instance, with our example keywords Emacs will highlight all keywords
 *first*, before classes and defined types.

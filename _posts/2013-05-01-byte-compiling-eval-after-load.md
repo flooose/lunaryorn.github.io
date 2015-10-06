@@ -61,11 +61,11 @@ we can use multiple forms at once.
 Lacking byte-compilation in eval-after-load
 ===========================================
 
-There is a serious drawback in using `eval-after-load`: The function does
-**not** compile its body.  If you are heavily using `eval-after-load` in your
-`init.el`, like I do, most of it will not be compiled actually!
+There is a serious drawback in using `eval-after-load`: The function does *not*
+compile its body.  If you are heavily using `eval-after-load` in your `init.el`,
+like I do, most of it will not be compiled actually!
 
-Thus initialization will be somewhat slower, and even worse, you will **not** be
+Thus initialization will be somewhat slower, and even worse, you will *not* be
 warned by the compiler, if you assign to free variables or call undefined
 functions, which often indicates mistakes like typos in variable names.
 
@@ -168,7 +168,7 @@ compilation:
 
 The `if` form loads the feature or file with `require` and `load` respectively,
 depending on the type of the `feature` argument.  Note that the `if` form is
-**not** part of the macro expansion.  Thus it is **executed** during macro
+*not* part of the macro expansion.  Thus it is *executed* during macro
 expansion, instead of appearing in the expanded body.
 
 Since macros are expanded during byte compilation, the `feature` is now loaded

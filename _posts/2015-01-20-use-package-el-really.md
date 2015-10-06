@@ -36,7 +36,7 @@ plug, sorry :) ), with all of the above features. You'd need to
 - and add the `doc/` sub-directory of the Flycheck directory to
   `Info-directory-list`.
 
-And most of these **every time** you update Flycheck.  With package.el, however,
+And most of these *every time* you update Flycheck.  With package.el, however,
 you'd just add the MELPA archive and run `M-x package-install RET flycheck`.
 *See the difference? Does your manual workflow really work well?*
 

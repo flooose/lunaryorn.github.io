@@ -21,7 +21,7 @@ This release introduces three breaking changes.  Two of these are related to the
 [new error list][]:
 
 `flycheck-display-errors-in-list` is gone.  If you had previously set
-`flycheck-display-errors-function` to this function, **remove** this setting
+`flycheck-display-errors-function` to this function, *remove* this setting
 from your configuration.  Furthermore `flycheck-list-errors` does not take a
 prefix argument anymore.  It cannot list errors at point any longer.
 

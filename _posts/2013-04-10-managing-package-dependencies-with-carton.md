@@ -74,9 +74,9 @@ $ echo '(depends-on "company")' >> Carton
 $ carton install
 ```
 
-You must **restart** Emacs after each Carton command for Emacs to pick up the
-new packages.  After restarting Emacs, the [Company][] package will now be
-available in Emacs.
+You must *restart* Emacs after each Carton command for Emacs to pick up the new
+packages.  After restarting Emacs, the [Company][] package will now be available
+in Emacs.
 
 Carton for package development
 ==============================
