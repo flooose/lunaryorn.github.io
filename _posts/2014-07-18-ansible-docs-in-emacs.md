@@ -74,7 +74,9 @@ Let's bind this new command to a key:
 Now we can conveniently lookup documentation with <kbd>C-c h a</kbd> in a YAML
 Mode buffer:
 
-![](/images/ansible-doc.png)
+<figure>
+<img src="/images/ansible-doc.png" />
+</figure>
 
 In case you wonder, why the IDO prompt is vertical, that's
 [IDO Vertical Mode][].

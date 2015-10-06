@@ -7,7 +7,10 @@ I’ve recently found the best Emacs package ever: [company-emoji][].  It’s a
 
 <!--more-->
 
-![Emoji input with Company](/images/company-emoji.gif)
+<figure>
+<img alt="Emoji input with Company" src="/images/company-emoji.gif" />
+<figcaption>Emoji input with Company</figcaption>
+</figure>
 
 Just install from MELPA, enable it with `(add-to-list 'company-backends
 'company-emoji)` and enjoy 😍 👍

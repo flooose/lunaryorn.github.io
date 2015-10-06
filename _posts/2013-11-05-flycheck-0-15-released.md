@@ -5,7 +5,10 @@ title: Flycheck 0.15 released
 I have the honour and pleasure to announce a new release of [Flycheck][], the
 modern syntax-checking extension for Emacs:
 
-![Flycheck 0.15 with [Zenburn][] and [Source Code Pro][]](/images/flycheck-0.15.png)
+<figure>
+<img src="{{baseurl}}/images/flycheck-0.15.png" />
+<figcaption>Flycheck 0.15 with Zenburn and Source Code Pro</figcaption>
+</figure>
 
 It is three months since the last release, so this release brings quite a lot of
 changes.  For a complete list of all changes, please read the complete list of

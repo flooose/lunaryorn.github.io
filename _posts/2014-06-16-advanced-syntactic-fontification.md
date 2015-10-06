@@ -257,7 +257,9 @@ the syntax classification and the text properties of the character at point.
 With this tool, we can now verify that our code indeed works, by checking the
 text properties:
 
-![](/images/describe-char.png)
+<figure>
+<img src="/images/describe-char.png" />
+</figure>
 
 We see that our `puppet-interpolation` property exists (by pressing the `Show`
 button we could also check its value), and that the character was fontified with

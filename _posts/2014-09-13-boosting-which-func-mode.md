@@ -161,7 +161,9 @@ and remove it from the tag name.  For all other cases, we just return the tag
 name without modifications.  The result is then truncated to 20 characters as
 before.
 
-![](/images/truncated-which-func-mode.png)
+<figure>
+<img src="/images/truncated-which-func-mode.png" />
+</figure>
 
 That's much better than the default.  And of course, my mode line features the
 insanely awesome [nyan cat][], like any other decent folk's mode line does.

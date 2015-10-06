@@ -16,7 +16,10 @@ finished—is already quite pleasing:
 
 <!--more-->
 
-![My new mode line](/images/my-mode-line.png)
+<figure>
+<img src="/images/my-mode-line.png" />
+<figcaption>My new mode line</figcaption>
+</figure>
 
 As usual, the Emacs Lisp reference helped greatly: The Mode Line customization
 is thoroughly documented in the section [Mode Line Format][].

@@ -5,7 +5,10 @@ title: Flycheck 0.16 released
 Time for a new release of [Flycheck][], the modern syntax-checking extension for
 Emacs:
 
-![Flycheck 0.16 with [Solarized Light][] and [Source Code Pro][]](/images/flycheck-0.16.png)
+<figure>
+<img src="/images/flycheck-0.16.png" />
+<figcaption>Flycheck 0.16 with Solarized Light and Source Code Pro</figcaption>
+</figure>
 
 In two months since the last release, Flycheck got a bunch of new syntax
 checkers, a brand-new error list, and the ability to override the executables of

@@ -29,7 +29,10 @@ instructions below were updated accordingly.
 
 ----
 
-![The dreaded Marmalade Screen of Death](/images/marmalade-crash.png)
+<figure>
+<img src="/images/marmalade-crash.png" />
+<figcaption>The dreaded Marmalade Screen of Death</figcaption>
+</figure>
 
 Looks familiar?  Then you're probably a fellow Emacs developer trying to upload
 a package to the [Marmalade][] ELPA archive.
