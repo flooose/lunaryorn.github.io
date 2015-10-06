@@ -1,0 +1,13 @@
+sudo: false
+language: ruby
+rvm:
+  - 2.2.3
+cache:
+  - bundler
+script:
+  - rake build
+  - rake verify
+env:
+  global:
+    # Speeds up installation of nokogiri
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
