@@ -13,8 +13,8 @@ a rough count. The curly quotes issue has generated over 100k words on the <a
 href="https://twitter.com/hashtag/emacs?src=hash">#emacs</a> dev list.
 That&#39;s 3 times my doctoral thesis.</p>&mdash; Artur Malabarba (@AMalabarba)
 <a href="https://twitter.com/AMalabarba/status/641598687467163648">9. September
-2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js"
-charset="utf-8"></script>
+2015</a>
+</blockquote>
 
 The issue of using curly quotes (`‘foo’`) in docstrings and other places where
 Emacs has of old used ASCII quotes (`` `foo'``), that is.
