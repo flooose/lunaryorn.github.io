@@ -50,7 +50,9 @@ namespace :verify do
 
   desc 'Run HTML Proofer'
   task proof: ['build:site'] do
-    sh 'bundle', 'exec', 'htmlproof', '_site/'
+    sh 'bundle', 'exec', 'htmlproof', '_site/',
+       '--check-html',
+       '--check-favicon'
   end
 end
 
