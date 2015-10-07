@@ -8,7 +8,8 @@ I’ve recently found the best Emacs package ever: [company-emoji][].  It’s a
 <!--more-->
 
 <figure>
-<img alt="Emoji input with Company" src="/images/company-emoji.gif" />
+<img alt="Animation showning emoji input with Company"
+     src="/images/company-emoji.gif" />
 <figcaption>Emoji input with Company</figcaption>
 </figure>
 
