@@ -75,7 +75,8 @@ Now we can conveniently lookup documentation with <kbd>C-c h a</kbd> in a YAML
 Mode buffer:
 
 <figure>
-<img src="/images/ansible-doc.png" />
+<img src="/images/ansible-doc.png"
+     alt="Documentation of ansible apt module in Emacs buffer"/>
 </figure>
 
 In case you wonder, why the IDO prompt is vertical, that's

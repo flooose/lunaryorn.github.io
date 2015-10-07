@@ -162,7 +162,8 @@ name without modifications.  The result is then truncated to 20 characters as
 before.
 
 <figure>
-<img src="/images/truncated-which-func-mode.png" />
+<img src="/images/truncated-which-func-mode.png"
+     alt="Mode line with truncated which-function for Python Mode"/>
 </figure>
 
 That's much better than the default.  And of course, my mode line features the
