@@ -2,7 +2,7 @@
 title: Half Year Anniversary of Flycheck
 ---
 
-While uploading the recent [0.9 release][1] of Flycheck, I realized that Flycheck
+While uploading the recent 0.9 release of Flycheck, I realized that Flycheck
 has just had its half year anniversary.
 
 Just half a year ago, at October 11th 2012, I published the first version of
@@ -24,7 +24,6 @@ I would like to thank all users and contributors of Flycheck for your continuing
 help and support.  It is honor and fun to me to provide Flycheck to such awesome
 people.
 
-[1]: http://flycheck.readthedocs.org/en/0.17/manual/changes.html#apr-13-2013
 [2]: https://github.com/flycheck/flycheck/tree/0.1
 [3]: https://github.com/flycheck/flycheck/tree/0.9
 [4]: https://github.com/flycheck/flycheck/blob/0.9/flycheck.el#L84

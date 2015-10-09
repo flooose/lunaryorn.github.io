@@ -11,8 +11,7 @@ modern syntax-checking extension for Emacs:
 </figure>
 
 It is three months since the last release, so this release brings quite a lot of
-changes.  For a complete list of all changes, please read the complete list of
-[changes][].  In this post, I will just go through the most important ones.
+changes.  In this post, I will just go through the most important ones.
 
 Breaking changes
 ================
@@ -159,7 +158,6 @@ As usual, from [MELPA][] or [Marmalade][].  I recommend the former.
 
 [flycheck]: http://flycheck.github.io
 [Source Code Pro]: https://github.com/adobe/source-code-pro
-[changes]: http://flycheck.readthedocs.org/en/0.17/manual/changes.html#nov-15-2013
 [Slim]: http://slim-lang.com
 [Closure Linter]: https://code.google.com/p/closure-linter/
 [PHP Mess Detector]: http://phpmd.org/

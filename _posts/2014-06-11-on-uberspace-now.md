@@ -55,7 +55,7 @@ doubly paid off.
 [Piwik]: http://piwik.org/
 [Do not Track]: http://en.wikipedia.org/wiki/Do_Not_Track
 [Github profile]: https://github.com/lunaryorn
-[Flycheck]: http://flycheck.readthedocs.org
+[Flycheck]: http://www.flycheck.org
 [Flycheck's profile]: https://github.com/flycheck
 [Tiny Tiny RSS]: http://tt-rss.org/redmine/projects/tt-rss/wiki
 [DDoS attack on Feedly]: http://blog.feedly.com/2014/06/11/denial-of-service-attack/

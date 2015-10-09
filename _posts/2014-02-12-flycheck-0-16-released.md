@@ -15,7 +15,7 @@ checkers, a brand-new error list, and the ability to override the executables of
 syntax checkers.
 
 Let's go through the list of important changes.  For a detailed list, please
-read the [changelog][] in the manual.
+read the changelog in the manual.
 
 Breaking changes
 ================
@@ -128,4 +128,3 @@ As usual, from [MELPA][] or [Marmalade][].  I recommend the former.
 [flycheck-haskell]: https://github.com/flycheck/flycheck-haskell
 [MELPA]: http://melpa.milkbox.net/
 [Marmalade]: http://marmalade-repo.org/packages/flycheck
-[changelog]: http://flycheck.readthedocs.org/en/0.17/manual/changes.html#jan-11-2014

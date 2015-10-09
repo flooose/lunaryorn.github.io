@@ -82,7 +82,7 @@ Mode buffer:
 In case you wonder, why the IDO prompt is vertical, that's
 [IDO Vertical Mode][].
 
-[Flycheck]: http://flycheck.readthedocs.org
+[Flycheck]: http://www.flycheck.org
 [Ansible]: http://www.ansible.com
 [Travis CI]: http://travis-ci.org
 [Vagrant]: http://vagrantup.com

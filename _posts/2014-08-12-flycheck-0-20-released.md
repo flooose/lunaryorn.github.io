@@ -13,5 +13,5 @@ and enjoy the new features.
 
 Thanks for your support
 
-[release announcement]: http://flycheck.readthedocs.org/en/0.20/news/flycheck-0.20-released.html
-[changelog]: http://flycheck.readthedocs.org/en/0.20/changes.html#aug-12-2014
+[release announcement]: http://www.flycheck.org/2014/10/26/flycheck-0.21.html
+[changelog]: http://www.flycheck.org/changes.html#aug-12-2014

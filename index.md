@@ -20,7 +20,7 @@ topics, which are of course related to technology and programming.
 You can find my open source work on [Github][], read my answers on
 [Stack Overflow][] and follow me on [Twitter][].
 
-[Flycheck]: http://flycheck.readthedocs.org
+[Flycheck]: http://www.flycheck.org
 [Puppet Mode]: https://github.com/lunaryorn/puppet-mode
 [Github]: https://github.com/lunaryorn
 [Stack Overflow]: http://stackoverflow.com/users/355252/lunaryorn

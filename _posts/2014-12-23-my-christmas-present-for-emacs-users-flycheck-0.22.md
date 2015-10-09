@@ -56,8 +56,8 @@ and one or another bug fix.
 I hope that you'll enjoy the new release, and I wish you a merry Christmas, and
 a happy new year.
 
-[release announcement]: http://flycheck.readthedocs.org/en/latest/guide/releases/flycheck-0.22.html
-[changelog]: http://flycheck.readthedocs.org/en/latest/guide/releases/index.html#dec-23-2014
+[release announcement]: http://www.flycheck.org/2014/12/23/flycheck-0.22.html
+[changelog]: http://www.flycheck.org/changes.html#dec-23-2014
 [flycheck-ocaml]: https://github.com/flycheck/flycheck-ocaml
 [squiggly-clojure]: https://github.com/clojure-emacs/squiggly-clojure
 [flycheck-package]: https://github.com/purcell/flycheck-package

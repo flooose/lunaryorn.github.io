@@ -31,7 +31,7 @@ I also maintain a couple of Emacs packages:
 - [EPL][] is a library to work with the Emacs package manager.  It lets you
   query the package database, install or remove packages, and perform upgrades.
 
-[Flycheck]: http://flycheck.readthedocs.org
+[Flycheck]: http://www.flycheck.org
 [Puppet Mode]: https://github.com/lunaryorn/puppet-mode
 [ansible-doc]: https://github.com/lunaryorn/ansible-doc.el
 [fancy-battery]: https://github.com/lunaryorn/fancy-battery.el

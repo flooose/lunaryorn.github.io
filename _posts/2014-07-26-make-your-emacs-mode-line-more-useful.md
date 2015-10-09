@@ -191,7 +191,7 @@ only because Magit doesn't work in this case:
 (put 'lunaryorn-vc-mode-line 'risky-local-variable t)
 ```
 
-[Flycheck]: http://flycheck.readthedocs.org/en/latest/
+[Flycheck]: http://www.flycheck.org
 [Multiple Cursors]: https://github.com/magnars/multiple-cursors.el
 
 Miscellaneous information

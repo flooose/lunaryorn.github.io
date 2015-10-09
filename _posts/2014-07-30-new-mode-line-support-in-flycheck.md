@@ -13,7 +13,7 @@ line support enables customizations that were simply impossible before.
 <!--more-->
 
 [mode-line]: internal:posts/make-your-emacs-mode-line-more-useful.md
-[flycheck]: http://flycheck.readthedocs.org
+[flycheck]: http://www.flycheck.org
 
 Dynamic content in the mode line
 ================================

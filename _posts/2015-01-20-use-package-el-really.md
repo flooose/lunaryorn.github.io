@@ -47,4 +47,4 @@ you're on your own.
 
 [1]: http://www.reddit.com/r/emacs/comments/2t1886/organising_extensions_git_submodule_vs/
 [2]: http://www.reddit.com/r/emacs/comments/1z9awm/to_use_packageel_or_not/
-[Flycheck]: http://flycheck.readthedocs.org/en/latest/
+[Flycheck]: http://www.flycheck.org
