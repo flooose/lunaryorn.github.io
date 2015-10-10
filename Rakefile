@@ -42,6 +42,9 @@ namespace :build do
   end
 end
 
+desc 'Build everything'
+task build: ['build:site']
+
 namespace :verify do
   desc 'Run jekyll doctor'
   task :doctor do
@@ -59,9 +62,6 @@ end
 
 desc 'Verify the site'
 task verify: ['verify:doctor', 'verify:proof']
-
-desc 'Build everything'
-task build: ['build:site']
 
 namespace :run do
   desc 'Preview the site'
