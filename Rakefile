@@ -87,9 +87,9 @@ namespace :verify do
   desc 'Run HTML Proofer'
   task proof: ['build:site'] do
     sh 'bundle', 'exec', 'htmlproof', '_site/',
-       '--disable-external',
-       '--check-html',
-       '--check-favicon'
+      '--disable-external',
+      '--check-html',
+      '--check-favicon'
   end
 end
 
