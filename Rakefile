@@ -20,6 +20,36 @@
 
 require 'rake/clean'
 
+# File rules
+LOGO_HEIGHT = 48
+LOGO = 'logo.png'
+ICON_SIZES = [16, 32, 96, 196]
+
+def optimise(image)
+  sh 'optipng', '-quiet', image
+end
+
+file LOGO => ['logo.svg'] do |t|
+  sh 'inkscape',
+    '-e', t.name, '-C', '-y', '0',
+    '-h', LOGO_HEIGHT.to_s,
+    t.prerequisites.first
+  optimise(icon_name)
+end
+
+def icon(size)
+  icon_name = "icon-#{size}.png"
+  file icon_name => ['logo.svg'] do |t|
+    sh 'inkscape',
+      '-e', t.name, '-C', '-y', '0', '-h', size.to_s,
+      t.prerequisites.first
+    optimise(icon_name)
+  end
+  icon_name
+end
+
+icons = ICON_SIZES.map { |size| icon(size) }
+
 namespace :init do
   CLOBBER << '.bundle'
   CLOBBER << 'vendor'
@@ -40,6 +70,9 @@ namespace :build do
   task :site do
     sh 'bundle', 'exec', 'jekyll', 'build'
   end
+
+  desc 'Build images'
+  task images: [LOGO] + icons
 end
 
 desc 'Build everything'
