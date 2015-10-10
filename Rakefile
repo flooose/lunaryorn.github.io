@@ -20,6 +20,9 @@
 
 require 'rake/clean'
 
+# Default task
+task default: :build
+
 # File rules
 LOGO_HEIGHT = 48
 LOGO = 'logo.png'
