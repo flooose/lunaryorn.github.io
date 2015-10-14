@@ -1,5 +1,11 @@
-/* Basic typography styles */
-body {                          /* Body text */
+@charset "UTF-8";
+
+@import "normalize.css";
+@import "fonts";
+@import "solarized.css";
+
+// Basic typography styles
+body {
     font-family: "Vollkorn", serif;
     font-size: 18px;
     line-height: 1.35;
@@ -10,7 +16,8 @@ body {                          /* Body text */
 
 }
 
-.container {                    /* Page container */
+// Page container
+.container {
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -19,7 +26,7 @@ article {
     margin-bottom: 15px;
 }
 
-p {                             /* Paragraphs */
+p {
     margin: 0 0;
     text-indent: 1.5em;
 }
