@@ -4,14 +4,22 @@
 @import 'fonts';
 @import 'solarized';
 
+$main-font: 'Vollkorn', serif;
+$main-color: #444;
+$font-size: 18px;
+
+$heading-color: #222;
+$secondary-color: #777;
+$border-color: #ccc;
+
 // Basic typography styles
 body {
-  color: #444;
-  font-family: 'Vollkorn', serif;
+  color: $main-color;
+  font-family: $main-font;
   // Enable a couple of nice font features
   -webkit-font-feature-settings: 'onum', 'kern', 'liga', 'clig', 'dlig', 'calt';
   font-feature-settings: 'onum', 'kern', 'liga', 'clig', 'dlig', 'calt';
-  font-size: 18px;
+  font-size: $font-size;
   line-height: 1.35;
 }
 
@@ -60,20 +68,10 @@ sup {
 sup {
   a[rel="footnote"] {
     // Use body font for footnotes
-    font-family: 'Vollkorn', serif;
+    font-family: $main-font;
     font-size: 1rem;
     text-decoration: none;
   }
-}
-
-h1 small,
-h2 small,
-h3 small,
-h4 small {
-  color: #777;
-  font-size: .65em;
-  font-weight: normal;
-  line-height: 1;
 }
 
 blockquote {
@@ -100,7 +98,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: #222;
+  color: $heading-color;
   font-family: 'Vollkorn', sans-serif;
   -webkit-font-feature-settings: 'salt', 'lnum';
   font-feature-settings: 'salt', 'lnum';
@@ -109,6 +107,13 @@ h4 {
   line-height: 1;
   margin-bottom: .8em;
   margin-top: 2em;
+
+  small {
+    color: $secondary-color;
+    font-size: .65em;
+    font-weight: normal;
+    line-height: 1;
+  }
 }
 
 h1 {
@@ -132,7 +137,7 @@ h3 {
 }
 
 hr {
-  border-color: #ccc;
+  border-color: $border-color;
   border-style: none none solid;
   border-width: 1px;
   margin: 1.35em 0;
@@ -167,7 +172,7 @@ code {
 }
 
 kbd {
-  border: 1px solid #ccc;
+  border: 1px solid $border-color;
   border-radius: 4px;
   box-shadow: 0 1px 0 rgba(0, 0, 0, .2), 0 0 0 2px #fff inset;
   padding: 0 4px;
@@ -178,7 +183,7 @@ code {
 }
 
 pre {
-  border: 1px solid #ccc;
+  border: 1px solid $border-color;
   border-radius: 4px;
   padding: 10px;
 
@@ -189,7 +194,7 @@ pre {
 
 // Special components
 .page-header {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid $border-color;
   margin-bottom: 1.5rem;
   padding: .5rem;
 }
@@ -214,7 +219,7 @@ pre {
 
 // Navigation
 .navbar {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid $border-color;
   padding: .8em 0;
 }
 
@@ -264,7 +269,7 @@ pre {
 
 .page-footer {
   // Page footer
-  border-top: 1px solid #ccc;
+  border-top: 1px solid $border-color;
   font-size: .86em;
   margin-top: 5rem;
   padding: .5rem;
