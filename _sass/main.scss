@@ -212,40 +212,6 @@ pre {
   }
 }
 
-// Table of contents
-.toc {
-  -webkit-font-feature-settings: 'salt', 'lnum';
-  font-feature-settings: 'salt', 'lnum';
-  margin-bottom: 2rem;
-  margin-top: -1rem;
-  padding: 0 1rem;
-
-  ul {
-    list-style: none inside none;
-    margin: 0;
-    padding: 0 .5em;
-  }
-
-  a {
-    font-family: 'Vollkorn';
-  }
-}
-
-.toc-title {
-  display: block;
-  font-weight: 600;
-  margin-bottom: .5em;
-}
-
-.toc-section-number {
-  float: left;
-  margin-right: .5em;
-}
-
-.toc-section-number:after {
-  content: '.';
-}
-
 // Navigation
 .navbar {
   border-bottom: 1px solid #ccc;
