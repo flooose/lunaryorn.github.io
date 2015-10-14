@@ -34,6 +34,9 @@ gems:
 feed:
   path: "feed.atom"
 
+sass:
+  style: compressed
+
 redcarpet:
   extensions:
     - no_intra_emphasis
