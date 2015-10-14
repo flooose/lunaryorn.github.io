@@ -57,6 +57,15 @@ sup {
   font-size: .86em;
 }
 
+sup {
+  a[rel="footnote"] {
+    // Use body font for footnotes
+    font-family: 'Vollkorn', serif;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+}
+
 h1 small,
 h2 small,
 h3 small,
@@ -85,12 +94,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-.footnoteRef {                  /* Use body font for footnotes */
-  font-family: 'Vollkorn', serif;
-  font-size: 1rem;
-  text-decoration: none;
 }
 
 h1,
