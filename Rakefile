@@ -87,6 +87,12 @@ namespace :verify do
     sh 'bundle', 'exec', 'jekyll', 'doctor'
   end
 
+  desc 'Run SCSS Lint'
+  task :lint do
+    sh 'bundle', 'exec', 'scss-lint',
+       '--config', '_sass/.scss-lint.yml', '_sass/'
+  end
+
   desc 'Run HTML Proofer'
   task proof: ['build:site'] do
     sh 'bundle', 'exec', 'htmlproof', '_site/',
@@ -97,7 +103,7 @@ namespace :verify do
 end
 
 desc 'Verify the site'
-task verify: ['verify:doctor', 'verify:proof']
+task verify: ['verify:doctor', 'verify:lint', 'verify:proof']
 
 namespace :run do
   desc 'Preview the site'

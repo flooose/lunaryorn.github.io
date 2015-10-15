@@ -69,7 +69,10 @@ sup {
 }
 
 sup {
+  // scss-lint:disable QualifyingElement
   a[rel="footnote"] {
+    // scss-lint:enable QualifyingElement
+
     // Use body font for footnotes
     font-family: $main-font;
     font-size: 1rem;

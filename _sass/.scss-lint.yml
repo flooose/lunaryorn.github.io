@@ -1,0 +1,7 @@
+exclude:
+  - 'normalize.scss'
+  - 'solarized.scss'
+
+linters:
+  StringQuotes:
+    enabled: false
