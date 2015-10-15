@@ -99,7 +99,7 @@ h2,
 h3,
 h4 {
   color: $heading-color;
-  font-family: 'Vollkorn', sans-serif;
+  font-family: $main-font;
   -webkit-font-feature-settings: 'salt', 'lnum';
   font-feature-settings: 'salt', 'lnum';
   font-weight: 600;
