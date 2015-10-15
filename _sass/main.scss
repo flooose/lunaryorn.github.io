@@ -8,6 +8,9 @@ $main-font: 'Vollkorn', serif;
 $main-color: #444;
 $font-size: 18px;
 
+$sans-font: 'Lato', sans-serif;
+$sans-font-size: .93em;
+
 $heading-color: #222;
 $secondary-color: #777;
 $border-color: #ccc;
@@ -85,8 +88,8 @@ blockquote {
 a {
   // Sans serif for links
   color: #333;
-  font-family: 'Lato', sans-serif;
-  font-size: .93em;
+  font-family: $sans-font;
+  font-size: $sans-font-size;
   text-decoration: none;
 }
 
@@ -200,7 +203,7 @@ pre {
 }
 
 .title {
-  font-family: 'Lato', sans-serif;
+  font-family: $sans-font;
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: .2em;
