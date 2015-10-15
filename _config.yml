@@ -1,5 +1,5 @@
-name: lunarsite
-description: "Emacs.  What else?  A bit of Haskell probably…"
+name: lunaryorn
+description: "Emacs.  What else?  A bit of functional programming probably…"
 url: "http://www.lunaryorn.com"
 
 baseurl: ""

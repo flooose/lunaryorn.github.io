@@ -1,6 +1,6 @@
 ---
-title: lunaryorn
-subtitle: Emacs.  What else?
+title: Emacs.  What else?
+subtitle: A bit of functional programming probably…
 layout: index
 ---
 
