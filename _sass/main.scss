@@ -11,6 +11,9 @@ $font-size: 18px;
 $sans-font: 'Lato', sans-serif;
 $sans-font-size: .93em;
 
+$mono-font: 'Source Code Pro', monospace;
+$mono-font-size: .83em;
+
 $heading-color: #222;
 $secondary-color: #777;
 $border-color: #ccc;
@@ -178,8 +181,8 @@ figcaption:before {
 
 kbd,
 code {
-  font-family: 'Source Code Pro', monospace;
-  font-size: .83em;
+  font-family: $mono-font;
+  font-size: $mono-font-size;
 }
 
 kbd {
