@@ -24,9 +24,8 @@ stylistic look of the whole body text.
 
 The sans serif font is [Lato][].  I scarcely use it, but you'll find it in the
 page title, and in hyperlinks.  The monospace font is [Adobe Source Code Pro][].
-It is used for `inline code` and in source code snippets.
-
-The colour scheme for syntax highlighting is [Solarized Light][].
+It is used for `inline code` and in source code snippets.  The colour scheme for
+syntax highlighting of these snippets is [Solarized Light][].
 
 The great book [Practical Typography][] by [Matthew Butterick][] provided much
 help and guidelines for the style of this website.

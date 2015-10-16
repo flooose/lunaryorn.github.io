@@ -16,7 +16,6 @@ most notably [Flycheck][].
 
 In this blog, I mostly write about Emacs, but occasionally also about other
 topics, which are of course related to technology and programming.
-
 You can find my open source work on [Github][], read my answers on
 [Stack Overflow][] and follow me on [Twitter][].
 
