@@ -23,13 +23,19 @@ $inline-box-shadow-color: rgba(0, 0, 0, .2);
 $inline-box-shadow-background: #fff;
 $inline-box-shadow: 0 1px 0 $inline-box-shadow-color, 0 0 0 2px $inline-box-shadow-background inset;
 
+@mixin font-feature-settings($features...) {
+  // scss-lint:disable VendorPrefix
+  font-feature-settings: $features;
+  -webkit-font-feature-settings: $features;
+}
+
 // Basic typography styles
 body {
+  // Enable a couple of nice font features
+  @include font-feature-settings('onum', 'kern', 'liga', 'clig', 'dlig', 'calt');
+
   color: $main-color;
   font-family: $main-font;
-  // Enable a couple of nice font features
-  -webkit-font-feature-settings: 'onum', 'kern', 'liga', 'clig', 'dlig', 'calt';
-  font-feature-settings: 'onum', 'kern', 'liga', 'clig', 'dlig', 'calt';
   font-size: $font-size;
   line-height: 1.35;
 }
@@ -112,10 +118,10 @@ h1,
 h2,
 h3,
 h4 {
+  @include font-feature-settings('salt', 'lnum');
+
   color: $heading-color;
   font-family: $main-font;
-  -webkit-font-feature-settings: 'salt', 'lnum';
-  font-feature-settings: 'salt', 'lnum';
   font-weight: 600;
   hyphens: none;
   line-height: 1;
