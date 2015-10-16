@@ -1,0 +1,28 @@
+// Use indentation to separate paragraphs.
+
+p {
+  margin: 0;
+  text-indent: 1.5em;
+
+  &:only-child {
+    text-indent: 0;
+  }
+}
+
+ul,
+ol {
+  margin: 1em 4em;
+}
+
+.page-footer,
+.post-info {
+  p {
+    text-indent: 0;
+  }
+}
+
+.footnotes {
+  p:first-child {
+    text-indent: 0;
+  }
+}

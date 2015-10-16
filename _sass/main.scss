@@ -4,6 +4,8 @@
 @import 'fonts';
 @import 'solarized';
 
+@import 'paragraph-indent';
+
 $main-font: 'Vollkorn', serif;
 $main-color: #444;
 $font-size: 18px;
@@ -50,22 +52,12 @@ article {
   margin-bottom: 15px;
 }
 
-p {
-  margin: 0;
-  text-indent: 1.5em;
-}
-
-p:only-child {
-  text-indent: 0;
-}
-
 strong {
   font-weight: 600;
 }
 
 ul,
 ol {
-  margin: 1em 4em;
   padding: 0;
 }
 
@@ -229,11 +221,9 @@ pre {
 .post-info {
   font-size: .83em;
   margin-bottom: 2rem;
-  padding: 0 1rem;
 
   p {
     margin-bottom: .25em;
-    text-indent: 0;
   }
 }
 
@@ -281,10 +271,6 @@ pre {
   li {
     margin-bottom: .5em;
   }
-
-  p:first-child {
-    text-indent: 0;
-  }
 }
 
 .page-footer {
@@ -297,7 +283,6 @@ pre {
   p {
     margin-bottom: .5em;
     text-align: center;
-    text-indent: 0;
   }
 }
 
