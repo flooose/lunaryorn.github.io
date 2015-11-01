@@ -2,21 +2,13 @@
 title: My Emacs
 layout: page
 excerpt: |
-  I use GNU Emacs for most of my daily work and maintain a couple of
+  I use Spacemacs for most of my daily work and maintain a couple of
   Emacs packages.
 ---
 
-I use [GNU Emacs][] for most of my daily work.  You can find my configuration on
-[Github](https://github.com/lunaryorn/.emacs.d/), as a single init file based on
-[use-package][] with some additional libraries.  My configuration requires Emacs
-trunk, and will not work on any stable Emacs release.
-
-Most of it is just customisation for various packages, but there are some gems
-inside.  Notably, I've spend some time to create a nice mode line, and there are
-quite elaborate configurations for AUCTeX/RefTeX, Haskell Modex, and Emacs Lisp.
-It's also quite tuned for OS X.
-
-I also maintain a couple of Emacs packages:
+I use [Spacemacs][], a [GNU Emacs] distribution, for most of my daily work, with
+some custom layers in my [dotfile][] repository.  I also maintain a couple of
+Emacs packages:
 
 - [Flycheck][] is an on-the-fly syntax checking extension, intended as
   replacement for Flymake, with better performance, more supported languages and
@@ -31,6 +23,7 @@ I also maintain a couple of Emacs packages:
 - [EPL][] is a library to work with the Emacs package manager.  It lets you
   query the package database, install or remove packages, and perform upgrades.
 
+[Spacemacs]: https://github.com/syl20bnr/spacemacs
 [Flycheck]: http://www.flycheck.org
 [Puppet Mode]: https://github.com/lunaryorn/puppet-mode
 [ansible-doc]: https://github.com/lunaryorn/ansible-doc.el
@@ -38,4 +31,4 @@ I also maintain a couple of Emacs packages:
 [pkg-info]: https://github.com/lunaryorn/pkg-info.el
 [epl]: https://github.com/cask/epl
 [GNU Emacs]: http://www.gnu.org/software/emacs/
-[use-package]: https://github.com/jwiegley/use-package/
+[dotfile]: https://github.com/lunaryorn/dotfiles
