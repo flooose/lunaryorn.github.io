@@ -95,11 +95,8 @@ blockquote {
 }
 
 a {
-  // Sans serif for links
   color: $main-color;
-  font-family: $sans-font;
-  font-size: $sans-font-size;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
