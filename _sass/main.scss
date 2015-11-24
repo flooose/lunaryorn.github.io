@@ -109,9 +109,14 @@ sup {
 blockquote {
   border-left: 5px solid $quote-border-color;
   font-size: 1.1em;
+  font-style: italic;
   line-height: 1.25;
   margin: 1.2em 0;
   padding: 0 2em;
+
+  em {
+    font-style: normal;
+  }
 }
 
 a {
