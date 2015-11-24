@@ -1,5 +1,5 @@
 ---
-title: Going Spacemacs
+title: My journey to Spacemacs
 ---
 
 In the last few months I was slowly gravitating towards Spacemacs, and about a
