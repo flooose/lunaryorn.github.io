@@ -8,6 +8,8 @@ my hand-made, beautiful, elaborate, 3k lines personal Emacs configuration in
 favour of Spacemacs, and I’m now going to tell you why I did that, what the
 switch was like, and how that whole thing feels.
 
+<!--more-->
+
 # Why?
 
 What got me interested in Spacemacs initially was the awesome UI—yes, sorry 😊.
