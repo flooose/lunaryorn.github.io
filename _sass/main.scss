@@ -126,6 +126,17 @@ a {
   &:hover {
     text-decoration: underline;
   }
+
+  // scss-lint:disable QualifyingElement
+  &[rev="footnote"] {
+    // scss-lint:enable QualifyingElement
+
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 h1,
