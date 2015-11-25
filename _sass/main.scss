@@ -122,10 +122,10 @@ blockquote {
 a {
   color: $main-color;
   text-decoration: underline;
-}
 
-a:hover {
-  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 h1,
