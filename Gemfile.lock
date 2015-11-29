@@ -123,7 +123,7 @@ GEM
     redcarpet (3.3.2)
     safe_yaml (1.0.4)
     sass (3.4.19)
-    scss_lint (0.42.2)
+    scss_lint (0.43.0)
       rainbow (~> 2.0)
       sass (~> 3.4.15)
     scss_lint_reporter_checkstyle (0.2.0)
