@@ -8,8 +8,8 @@ twitter_large_image: /images/emacs-Q.png
 This is a sentence you will often read when you report bugs in Emacs packages;
 it’s usually a quick reply from a developer and goes with no further explanation
 or even the slightest clue on what you’re actually supposed to do.  If you ever
-found yourself in that situation then this is a post for you: I’ll explain what
-it means to “reproduce a bug in `emacs -Q`”, how to do that properly, and why
+found yourself in that situation then this post is for you: I’ll explain what it
+means to “reproduce a bug in `emacs -Q`”, how to do that properly, and why
 developers ask you for this.
 
 <!--more-->
@@ -25,7 +25,7 @@ fresh GUI Emacs.  You get a bare-bones Emacs that looks like this:
 
 <figure>
 <img src="/images/emacs-Q.png" alt="Bare-bones emacs -Q"/>
-<figcaption>A bare-bones `emacs -Q`</figcaption>
+<figcaption>A bare-bones <code>emacs -Q</code></figcaption>
 </figure>
 
 Now initialise Emacs’ package system with `M-x package-initialize`.  Normally
@@ -67,12 +67,11 @@ buggy or misbehaving package in your Emacs configuration that breaks our
 package.
 
 If you can reproduce a bug in `emacs -Q` you give us an important clue: The bug
-is in our own code and we only need to look at our own code to find it.  If you
-can’t reproduce a bug in `emacs -Q` we have to look at your *entire* Emacs
-configuration which is a lot more work and takes a lot more time.  What’s more
-you also enable us to reproduce the bug *ourselves* with just our package and a
-pure Emacs session, and if we can reproduce a bug
-[we are halfway to fixing it][1].
+is in our own code and we only need to look at our own code to find it.  That is
+much simpler than looking at your *entire* Emacs configuration and all of the
+other packages that you have installed.  What’s more you also enable us to
+reproduce the bug *ourselves* with just our package and a pure Emacs session,
+and if we can reproduce a bug [we are halfway to fixing it][1].
 
 [1]: http://geoff.greer.fm/2015/08/15/how-to-write-good-bug-reports/
 [exec-path-from-shell]: https://github.com/purcell/exec-path-from-shell
