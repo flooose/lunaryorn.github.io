@@ -93,6 +93,6 @@
       </footer>
     </div>
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    {% include piwik.html %}
+    {% if site.environment == 'production' %}{% include piwik.html %}{% endif %}
   </body>
 </html>
