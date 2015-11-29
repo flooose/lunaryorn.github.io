@@ -27,7 +27,8 @@ package in a top-level form.  A typical use in my configuration looks like this:
 (use-package whitespace
   :bind (("C-c T w" . whitespace-mode))
   :init
-  (dolist (hook '(prog-mode-hook text-mode-hook conf-mode-hook))
+  (dolist (hook '(prog-mode-hook text-mode-hooki
+                  conf-mode-hook))
     (add-hook hook #'whitespace-mode))
   :config (setq whitespace-line-column nil)
   :diminish whitespace-mode)
@@ -45,7 +46,8 @@ my init file before:
 ```cl
 (global-set-key (kbd "C-c T w") #'whitespace-mode)
 
-(dolist (hook '(prog-mode-hook text-mode-hook conf-mode-hook))
+(dolist (hook '(prog-mode-hook text-mode-hook
+                conf-mode-hook))
   (add-hook hook #'whitespace-mode))
 
 (with-eval-after-load 'whitespace
@@ -92,7 +94,7 @@ can't be avoided otherwise:
 (require 'package)
 (setq package-enable-at-startup nil)
 (add-to-list 'package-archives
-             '("melpa" . "http://melpa.org/packages/"))
+             '("melpa" . "https://melpa.org/packages/"))
 
 (package-initialize)
 
@@ -102,7 +104,7 @@ can't be avoided otherwise:
   (package-install 'use-package))
 ```
 
-[MELPA]: http://melpa.org
+[MELPA]: https://melpa.org
 
 “Local” packages
 ================
