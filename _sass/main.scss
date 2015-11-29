@@ -159,6 +159,7 @@ h2,
 h3,
 h4 {
   @include font-feature-settings('salt', 'lnum');
+  @include hyphens(none);
 
   color: $heading-color;
   font-family: $main-font;
