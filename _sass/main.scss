@@ -191,10 +191,10 @@ h3 {
 
 .header-section-number {
   margin-right: .5em;
-}
 
-.header-section-number:after {
-  content: '.';
+  &::after {
+    content: '.';
+  }
 }
 
 hr {
@@ -223,12 +223,12 @@ figcaption {
   font-size: .9em;
   margin-top: .8em;
   text-align: center;
-}
 
-figcaption:before {
-  content: 'Figure.';
-  font-weight: 700;
-  margin-right: .5em;
+  &::before {
+    content: 'Figure.';
+    font-weight: 700;
+    margin-right: .5em;
+  }
 }
 
 kbd,
@@ -305,11 +305,11 @@ pre {
   > li {
     display: inline;
 
-    &:after {
+    &::after {
       content: ' · ';
     }
 
-    &:last-child:after {
+    &:last-child::after {
       content: '';
     }
   }
