@@ -108,6 +108,8 @@ task verify: ['verify:doctor', 'verify:lint', 'verify:proof']
 namespace :run do
   desc 'Preview the site'
   task :preview do
-    sh 'bundle', 'exec', 'jekyll', 'serve', '-w', '-D', '--future'
+    sh 'bundle', 'exec', 'jekyll', 'serve',
+       '--config', '_config.yml,_config_dev.yml',
+       '-w', '-D', '--future'
   end
 end
