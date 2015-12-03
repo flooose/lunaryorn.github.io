@@ -17,7 +17,7 @@ finished—is already quite pleasing:
 <!--more-->
 
 <figure>
-<img src="/images/my-mode-line.png"
+<img src="{{site.url}}{{site.baseurl}}/images/my-mode-line.png"
      alt="My custom mode line with Flycheck status, projectile project name, which function, etc."/>
 <figcaption>My new mode line</figcaption>
 </figure>

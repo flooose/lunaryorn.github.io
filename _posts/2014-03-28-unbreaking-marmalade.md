@@ -30,7 +30,8 @@ instructions below were updated accordingly.
 ----
 
 <figure>
-<img src="/images/marmalade-crash.png" alt="A stacktrace from Marmalade"/>
+<img src="{{site.url}}{{site.baseurl}}/images/marmalade-crash.png"
+     alt="A stacktrace from Marmalade"/>
 <figcaption>The dreaded Marmalade Screen of Death</figcaption>
 </figure>
 

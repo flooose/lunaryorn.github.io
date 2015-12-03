@@ -9,7 +9,7 @@ I’ve recently found the best Emacs package ever: [company-emoji][].  It’s a
 
 <figure>
 <img alt="Animation showning emoji input with Company"
-     src="/images/company-emoji.gif" />
+     src="{{site.url}}{{site.baseurl}}/images/company-emoji.gif" />
 <figcaption>Emoji input with Company</figcaption>
 </figure>
 

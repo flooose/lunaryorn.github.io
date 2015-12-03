@@ -6,7 +6,8 @@ I have the honour and pleasure to announce a new release of [Flycheck][], the
 modern syntax-checking extension for Emacs:
 
 <figure>
-<img src="{{baseurl}}/images/flycheck-0.15.png" alt="Emacs frame with Flycheck 0.15" />
+<img src="{{site.url}}{{site.baseurl}}/images/flycheck-0.15.png"
+     alt="Emacs frame with Flycheck 0.15" />
 <figcaption>Flycheck 0.15 with Zenburn and Source Code Pro</figcaption>
 </figure>
 
