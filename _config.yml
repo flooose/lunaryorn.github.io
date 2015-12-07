@@ -14,6 +14,10 @@ author:
 github:
   url: "https://github.com/lunaryorn/lunaryorn.github.io"
 
+tracking:
+  ga:
+    id: "UA-71100672-1"
+
 # Build settings
 environment: production
 markdown: redcarpet
