@@ -1,11 +1,6 @@
----
-title: My journey to Spacemacs
----
-
-Over the last few months I was slowly gravitating towards Spacemacs.  About a
-month ago I finally couldn’t resist its gravitational pull anymore, and
-abandoned my hand-crafted, beautiful, elaborate, 3k lines personal Emacs
-configuration in favour of Spacemacs.
+a month ago I finally couldn’t resist its gravitational pull anymore, and
+abandoned my hand-crafted, elaborate, 3k lines personal Emacs configuration in
+favour of Spacemacs.
 
 In this post I’ll write about why I did that, what switching to a entirely
 different Emacs configuration was like, and how that whole thing feels now.
@@ -17,76 +12,47 @@ different Emacs configuration was like, and how that whole thing feels now.
 What got me interested in Spacemacs initially was the beautiful user interface
 😊.  Particularly, the beautiful mode line 😊.  I love beautiful things, and the
 Spacemacs UI was just so much more beautiful than all that I had managed to get
-to with my configuration.  Even as I write this post in Spacemacs, after more
-than a month of using it eight hours a day for my work, I still marvel at its
-beauty 😍.
+to with my configuration.  Even as I write this post in Spacemacs, after almost
+two months of using it eight hours a day for work, I still enjoy at its beauty
+😍.  Nonetheless, I hesitated to commit myself to Spacemacs; I thought in the end
+it’d just be like any other starter kit, only with different drawbacks and
+limitations.
 
-Now, I must admit that even though a beautiful UI makes me happy it’s not
-getting my work done.  Nor did it overcome the nagging in the back of my head
-which said “Hey, you’re using a starter kit, and you shouldn’t be!”.  If it had
-only been the user interface it’d have been a short trip to Spacemacs for me.
+Spacemacs, however, is not just a starter kit.  It’s an editor on its own, with
+a special focus on a beautiful user interface, a great user experience and a
+deep integration of packages.  Spacemacs doesn’t feel like a bunch of packages
+tacked together with lots of glue; it feels like a perfectly integrated product
+made from one piece.
 
-## An editor on its own, made from one piece
+# Layers below
 
-But soon after starting Spacemacs for the first time I realised what Spacemacs
-really is, and more importantly, what it is _not_:
+Under the surface, Spacemacs is powered by a well-designed and powerful
+configuration API called “layers”.
 
-> Spacemacs is not a starter kit; it’s an editor on its own!
+----
 
-Spacemacs is really a *product*—in the best possible sense of that word—that
-just happens to be build on Emacs.
+Under the surface, a well-designed and powerful configuration API called
+“layers” powers much of Spacemacs’ inner workings, and provides a solid based
+for your own extensions to Spacemacs.
 
-> Spacemacs is a *product*!
+Layers elegantly solve a major problem in typical starter kits or configuration
+bundles: Their configuration is *opaque*.  Often there is only so much that you
+can change; there’s a limit in how far you can diverge from their opinions and
+pre-built configurations.  At some point there’s the one setting or package that
+you don’t like and that is impossible to change within the configuration bundle.
 
-Spacemacs doesn’t just tack a bunch of packages together with lots of glue, like
-many starter kits do and like I did in my own configuration.
+> To a large degree, configuration bundles are “take all or nothing”.
 
-Spacemacs *integrates* packages, and every time I use the incredibly consistent
-key bindings, browse the perfectly arranged Helm buffers or see the beautiful UI
-arrangements I notice that the difference is more than just words.
-
-> Spacemacs appears incredibly *consistent* and *beautiful*; it feels as if made
-from one piece.
-
-
-It’s not just the surface that shines:  Spacemacs is well-designed from top
-all down the way to it’s internals.  On the surface there are a great UI and a
-consistent keybindings.  On the bottom there’s well-thought, powerful and
-flexible configuration API which Spacemacs calls “layers”.
-
-Layers successfully overcome a major problem in typical starter kits: The
-opaqueness of their configuration.  There’s only so much that you change and so
-far you can diverge from their opinions.  Sooner or later you hit the one
-setting that you don’t like but can’t easily change either.  Starter kits
-typically are a “take all or nothing” thing to a large degree.
-
-Spacemacs however is a “take just what you like” story.  Its layers are entirely
-transparent.  You can easily disable packages or override settings from other
-layers, you can complement or even “steal” packages from other layers and even
-replace layers entirely.  This enables you to pick only those parts that you
-like.  You can omit the layers you don’t need, override the settings you don’t
-like, disable the packages that you don’t want, “steal” the packages that you’d
-like to configure differently, and complement those that you’d use in a
-different way.
-
-For instance, Spacemacs includes a simple setup for `exec-path-from-shell`,
-a package which copies environment variables from your shell configuration.
-This simple setup wasn’t nearly enough for me, so I just
-[“stole” the package from Spacemacs][1]: I’m still using all of Spacemacs, but
-I have my own and _only_ my own configuration for `exec-path-from-shell`.
-Spacemacs doesn’t try to interfere; it just stays out of my way and let’s me
-configure this package exactly the way I want, without affecting the rest of
-Spacemacs.
-
-Another example: Spacemacs adds yasnipppet which I heartly dislike 😠 But no harm
-done, I just need to add it to `dotspacemacs-excluded-packages` and its gone
-from my Emacs 😎
+Spacemacs is not.  Its layers are entirely transparent.  They let you pick those
+parts you need, and override or disable those that you don’t want.
 
 The layer system took me a while to understand, but in my opinion its one of the
 best parts of Spacemacs and a really great way to structure an Emacs
-configuration.  Actually I had completely misunderstood it initially, but the
-Spacemacs maintainer took the time to explain the power and flexibility of the
-system to me in a lengthy Twitter conversation.
+configuration.  If the GUI attracted me the layer system made me stay.
+
+ completely misunderstood it initially, but the Spacemacs
+maintainer took the time to explain the power and flexibility of the system to
+me in a lengthy Twitter conversation.
 
 [1]: https://github.com/lunaryorn/dotfiles/blob/8a310f16bbfc3fd8a122d4c661b36a23f1691dce/spacemacs/.spacemacs.d/layers/lunaryorn/packages.el#L42
 
