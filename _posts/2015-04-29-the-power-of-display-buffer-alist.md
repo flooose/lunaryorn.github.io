@@ -69,7 +69,7 @@ I like to combine this feature with this little command:
   (dolist (window (window-at-side-list))
     (quit-window nil window)))
 
-(global-set-key (kbd "C-c q") #’lunaryorn-quit-bottom-side-windows)
+(global-set-key (kbd "C-c q") #'lunaryorn-quit-bottom-side-windows)
 ```
 
 Now I can press `C-c ! l` to show a list of all Flycheck errors at the bottom of
