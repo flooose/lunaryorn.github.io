@@ -87,6 +87,11 @@ namespace :verify do
     sh 'bundle', 'exec', 'jekyll', 'doctor'
   end
 
+  desc 'Run Github Pages health check'
+  task :healthcheck do
+    sh 'bundle', 'exec', 'github-pages', 'health-check'
+  end
+
   desc 'Run SCSS Lint'
   task :lint do
     sh 'bundle', 'exec', 'scss-lint',
@@ -103,7 +108,10 @@ namespace :verify do
 end
 
 desc 'Verify the site'
-task verify: ['verify:doctor', 'verify:lint', 'verify:proof']
+task verify: ['verify:doctor',
+              'verify:healthcheck',
+              'verify:lint',
+              'verify:proof']
 
 namespace :run do
   desc 'Preview the site'
