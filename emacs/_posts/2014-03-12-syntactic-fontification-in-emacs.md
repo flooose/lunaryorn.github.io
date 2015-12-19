@@ -9,7 +9,7 @@ explains the concept of “syntactic fontification” of strings and comments.  
 font locking technique is the easiest to get started with, although the concept
 itself is quite intricate and powerful.
 
-[font-lock]: internal:posts/font-locking-in-emacs.md
+[font-lock]: {% post_url 2014-03-12-font-locking-in-emacs %}
 
 Syntax tables
 =============

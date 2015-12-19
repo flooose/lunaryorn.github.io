@@ -18,9 +18,9 @@ faces provided by Emacs.
 
 This article illustrates the basic principles of Search-based fontification.
 
-[font-lock]: internal:posts/font-locking-in-emacs.md
+[font-lock]: {% post_url 2014-03-12-font-locking-in-emacs %}
 [flk]: el-variable:font-lock-keywords
-[syn-font-lock]: internal:posts/syntactic-fontification-in-emacs.md
+[syn-font-lock]: {% post_url 2014-03-12-syntactic-fontification-in-emacs %}
 
 Prerequisites
 =============

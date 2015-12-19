@@ -45,4 +45,4 @@ the old definition of the `stante-after` macro and simply wraps the body in a
 `lambda` form.
 
 [r112976]: http://git.savannah.gnu.org/cgit/emacs.git/commit/?id=de0503df97a507a523a192e877a8d5c7439c4846
-[last post]: internal:posts/byte-compiling-eval-after-load.md
+[last post]: {% post_url 2013-05-01-byte-compiling-eval-after-load %}

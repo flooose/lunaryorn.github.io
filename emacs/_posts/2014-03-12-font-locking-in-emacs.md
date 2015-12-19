@@ -51,9 +51,9 @@ Articles
 
 In this series, I'll cover all of these three ways of font locking:
 
-1. [Syntactic Fontification in Emacs](internal:posts/syntactic-fontification-in-emacs.md)
-2. [Search Based Fontification with Keywords](internal:posts/search-based-fontification-with-keywords.md)
-3. [Advanced syntactic fontification](internal:posts/advanced-syntactic-fontification.md)
+1. [Syntactic Fontification in Emacs]({% post_url 2014-03-12-syntactic-fontification-in-emacs %})
+2. [Search Based Fontification with Keywords]({% post_url 2014-03-26-search-based-fontification-with-keywords %})
+3. [Advanced syntactic fontification]({% post_url 2014-06-16-advanced-syntactic-fontification %})
 
 I'll update this post as new articles in this series appear.
 

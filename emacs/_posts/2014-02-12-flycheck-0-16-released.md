@@ -108,7 +108,7 @@ Get it
 
 As usual, from [MELPA][] or [Marmalade][].  I recommend the former.
 
-[previous post]: internal:posts/syntax-checker-executables-in-flycheck.md
+[previous post]: {% post_url 2013-11-26-syntax-checker-executables-in-flycheck %}
 [flycheck]: http://flycheck.github.io
 [Source Code Pro]: https://github.com/adobe/source-code-pro
 [Solarized Light]: https://github.com/bbatsov/solarized-emacs

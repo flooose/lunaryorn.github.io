@@ -17,7 +17,7 @@ important features of this new release.
 # Use functions for syntax checking
 
 The coolest feature in this release are “generic syntax checkers”.  I already
-[wrote about them before](internal:posts/generic-syntax-checkers-in-flycheck.md),
+[wrote about them before]({% post_url 2014-12-03-generic-syntax-checkers-in-flycheck %}),
 so let's get to the point: They let you use arbitrary functions to check
 buffers.  Sounds trivial, but let's use do cool new things.
 

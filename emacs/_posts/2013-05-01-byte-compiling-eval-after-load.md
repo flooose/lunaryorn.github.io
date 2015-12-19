@@ -256,7 +256,7 @@ Now we are done.  With this macro, `eval-after-load` forms are compiled to byte
 code, giving you both the speedup of byte code, and the helpful warnings and
 hints of the byte compiler.
 
-[follow up]: internal:posts/introducing-with-eval-after-load.md
+[follow up]: {% post_url 2013-06-25-introducing-with-eval-after-load %}
 [bug #13021]: http://debbugs.gnu.org/cgi/bugreport.cgi?bug=13021
 [“function” quote]: http://www.gnu.org/software/emacs/manual/html_node/elisp/Anonymous-Functions.html#index-function-753
 [auctex]: http://www.gnu.org/software/auctex/

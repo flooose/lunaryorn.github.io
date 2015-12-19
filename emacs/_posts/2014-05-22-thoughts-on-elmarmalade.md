@@ -6,7 +6,7 @@ On [May 19th][post], Nic Ferrier switched the grand old [Marmalade][] to his
 [elmarmalade][] rewrite of the old Javascript-based code.  He wrote elmarmalade
 in Emacs Lisp, using his own Emacs Lisp web server [elnode][].  He [claims][1]
 that this rewrite will be the solution to all the
-[past problems of Marmalade](internal:posts/unbreaking-marmalade.md).
+[past problems of Marmalade]({% post_url 2014-03-28-unbreaking-marmalade %}).
 
 Currently, it seems to be far from that.  The site is almost non-functional.
 Login and registration do not work yet, package uploads are not yet available,

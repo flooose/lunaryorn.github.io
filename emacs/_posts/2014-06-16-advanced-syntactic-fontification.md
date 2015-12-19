@@ -41,11 +41,11 @@ Instead, we need store the syntactic context in a text property at each variable
 interpolation in a buffer.  In `font-lock-keywords` we can then access this text
 property, and fontify valid interpolations accordingly.
 
-[font-lock]: internal:posts/font-locking-in-emacs.md
+[font-lock]: {% post_url 2014-03-12-font-locking-in-emacs %}
 [spf]: el-variable:syntax-propertize-function
 [flk]: el-variable:font-lock-keywords
-[syn-font-lock]: internal:posts/syntactic-fontification-in-emacs.md
-[font-lock-keywords]: internal:posts/search-based-fontification-with-keywords.md
+[syn-font-lock]: {% post_url 2014-03-12-syntactic-fontification-in-emacs %}
+[font-lock-keywords]: {% post_url 2014-03-26-search-based-fontification-with-keywords %}
 
 Hooking into syntactic analyses
 ===============================
@@ -244,7 +244,7 @@ recursively continue to search for the next occurrence, until we hit the
 an occurrence of the property, it returns `nil`, causing our function return
 `nil` as well.
 
-[setup]: internal:posts/search-based-fontification-with-keywords.md#setup-boilerplate
+[setup]: {% post_url 2014-03-26-search-based-fontification-with-keywords %}#setup-boilerplate
 
 Debugging
 =========

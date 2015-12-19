@@ -21,7 +21,7 @@ tricks.
 
 <!--more-->
 
-[mode-line]: internal:posts/make-your-emacs-mode-line-more-useful.md
+[mode-line]: {% post_url 2014-07-26-make-your-emacs-mode-line-more-useful %}
 
 Customising the appearance of Which Func Mode
 =============================================
