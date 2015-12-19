@@ -23,6 +23,10 @@ Emacs packages:
 - [EPL][] is a library to work with the Emacs package manager.  It lets you
   query the package database, install or remove packages, and perform upgrades.
 
+I frequently write about Emacs; these are my latest posts:
+
+{% include post-list.html posts=site.categories.emacs limit=5 %}
+
 [Spacemacs]: https://github.com/syl20bnr/spacemacs
 [Flycheck]: http://www.flycheck.org
 [Puppet Mode]: https://github.com/lunaryorn/puppet-mode
