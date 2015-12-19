@@ -1,5 +1,7 @@
 ---
-title: "Emacs Examined: Typographic editing modes"
+title: "Emacs Spotlight: Typographic Editing Modes"
+tags: emacs-spotlight
+layout: series-post
 ---
 
 In this post I’ll introduce you to two modes that bring some typographic editing
