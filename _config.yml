@@ -28,6 +28,7 @@ exclude:
   - "Gemfile"
   - "Gemfile.lock"
   - "vendor"
+permalink: "/:year/:month/:day/:title.html"
 format:
   date_long: "%B %-d, %Y"
   date_short: "%b %d, %y"
