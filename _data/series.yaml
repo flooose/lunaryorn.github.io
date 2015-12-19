@@ -3,3 +3,8 @@ emacs-spotlight:
   description: >
     This series casts a spotlight on notable Emacs features and packages in
     short and concise posts.
+emacs-font-locking:
+  title: Emacs Font Locking
+  description: >
+    This is a series of tutorial posts about Emacs’ font locking system which
+    provides syntax highlighting in buffers.

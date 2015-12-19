@@ -1,5 +1,7 @@
 ---
 title: Search-based fontification with keywords
+tags: emacs-font-locking
+layout: series-post
 ---
 
 This article continues the series about [Font Locking in Emacs][font-lock] with

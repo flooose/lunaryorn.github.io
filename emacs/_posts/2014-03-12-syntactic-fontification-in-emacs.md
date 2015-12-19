@@ -1,5 +1,7 @@
 ---
 title: Syntactic fontification in Emacs
+tags: emacs-font-locking
+layout: series-post
 ---
 
 This is the first article of the [Font Locking in Emacs][font-lock] series.  It
