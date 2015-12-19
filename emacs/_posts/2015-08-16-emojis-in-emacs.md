@@ -1,5 +1,7 @@
 ---
-title: Emojis in Emacs
+title: "Emacs Spotlight: Emojis in Emacs"
+tag: emacs-spotlight
+layout: series-post
 ---
 
 I’ve recently found the best Emacs package ever: [company-emoji][].  It’s a

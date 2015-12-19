@@ -1,5 +1,7 @@
 ---
-title: Ansible Documention in Emacs
+title: "Emacs Spotlight: Ansible Documention in Emacs"
+tags: emacs-spotlight
+layout: series-post
 twittercard: summary_large_image
 twittercardimage: /images/ansible-doc.png
 ---

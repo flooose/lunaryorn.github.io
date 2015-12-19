@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<article>
+  {% include page-header.html %}
+  {% include post-info.html %}
+  {{content}}
+</article>
+
+{% comment %}Determine the name of the series from the page tags{% endcomment %}
+{% for tag in page.tags %}
+{% if site.data.series contains tag %}
+{% assign series = tag %}
+{% break %}
+{% endif %}
+{% endfor %}
+
+{% assign posts = site.tags[series] %}
+{% assign no_posts = posts | size %}
+
+<footer class="series-footer">
+    <p>
+        This post is part of the {{ site.data.series[series].title }} series.
+        {{site.data.series[series].description}}
+    </p>
+
+    <div class="series-posts">
+        {% if no_posts > 1 %}
+        <p>Other posts in this series:</p>
+        {% include post-list.html posts=posts skip_current_page=true %}
+        {% endif %}
+    </div>
+</footer>

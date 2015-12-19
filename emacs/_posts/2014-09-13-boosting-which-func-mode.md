@@ -1,5 +1,7 @@
 ---
-title: Boosting Which Func Mode
+title: "Emacs Spotlight: Boosting Which Func Mode"
+tags: emacs-spotlight
+layout: series-post
 ---
 
 [Which Func Mode](el-function:which-func-mode) shows the name of the current

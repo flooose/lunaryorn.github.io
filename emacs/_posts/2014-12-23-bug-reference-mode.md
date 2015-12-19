@@ -1,5 +1,7 @@
 ---
-title: TIL about Bug Reference Mode
+title: "Emacs Spotlight: Bug Reference Mode"
+tags: emacs-spotlight
+layout: series-post
 ---
 
 There's not a day in which I don't find a new gem for Emacs.  Today it's the

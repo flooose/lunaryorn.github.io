@@ -1,5 +1,7 @@
 ---
-title: Configuring buffer display in Emacs
+title: "Emacs Spotlight: Configure buffer display"
+tags: emacs-spotlight
+layout: series-post
 ---
 
 I guess every Emacs user knows this particular phenomenon: Windows constantly
