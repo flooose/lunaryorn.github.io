@@ -14,9 +14,15 @@ What got me interested in Spacemacs initially was the beautiful user interface
 Spacemacs UI was just so much more beautiful than all that I had managed to get
 to with my configuration.  Even as I write this post in Spacemacs, after almost
 two months of using it eight hours a day for work, I still enjoy at its beauty
-😍.  Nonetheless, I hesitated to commit myself to Spacemacs; I thought in the end
+😍.
+
+> Spacemacs is beautiful.
+
+Nonetheless, I hesitated to commit myself to Spacemacs; I thought in the end
 it’d just be like any other starter kit, only with different drawbacks and
 limitations.
+
+> Spacemacs is not a starter kit—it’s an editor on its own!
 
 Spacemacs, however, is not just a starter kit.  It’s an editor on its own, with
 a special focus on a beautiful user interface, a great user experience and a
@@ -26,35 +32,31 @@ made from one piece.
 
 # Layers below
 
-Under the surface, Spacemacs is powered by a well-designed and powerful
-configuration API called “layers”.
+Under the surface Spacemacs is powered by a well-designed and powerful
+configuration API called “layers”.  Layers neatly group related packages and
+configuration into a single unit, and provide structure for custom configuration
+and extensions, while at the same time still allowing for customization of
+Emacs.
 
-----
-
-Under the surface, a well-designed and powerful configuration API called
-“layers” powers much of Spacemacs’ inner workings, and provides a solid based
-for your own extensions to Spacemacs.
+> Spacemacs’ layers are entirely transparent.  They _never_ get in your way.
 
 Layers elegantly solve a major problem in typical starter kits or configuration
-bundles: Their configuration is *opaque*.  Often there is only so much that you
-can change; there’s a limit in how far you can diverge from their opinions and
-pre-built configurations.  At some point there’s the one setting or package that
-you don’t like and that is impossible to change within the configuration bundle.
+bundles: Their configuration is usually very opaque.  There’s only so much that
+you can change, and a hard limit in how far you can diverge from their opinions
+and pre-set configurations.  At some point there’ll be the one setting or
+package you don’t like but can’t reasonably change anymore.
 
-> To a large degree, configuration bundles are “take all or nothing”.
+Layers are different however.  You cannot only customise Spacemacs horizontally
+by adding or removing layers, you can also change it vertically by overriding
+specific settings or packages within a layer.  As such, using a layer is never
+“take all or nothing”.  You can exactly pick only those parts that you like and
+disable or override others.
 
-Spacemacs is not.  Its layers are entirely transparent.  They let you pick those
-parts you need, and override or disable those that you don’t want.
+The beauty of Spacemacs attracted me, but layers made me stay.  They help me
+structure my own extensions to Spacemacs, and never got in my way when I tried
+to override or disable Spacemacs’ built-in layers.
 
-The layer system took me a while to understand, but in my opinion its one of the
-best parts of Spacemacs and a really great way to structure an Emacs
-configuration.  If the GUI attracted me the layer system made me stay.
-
- completely misunderstood it initially, but the Spacemacs
-maintainer took the time to explain the power and flexibility of the system to
-me in a lengthy Twitter conversation.
-
-[1]: https://github.com/lunaryorn/dotfiles/blob/8a310f16bbfc3fd8a122d4c661b36a23f1691dce/spacemacs/.spacemacs.d/layers/lunaryorn/packages.el#L42
+----
 
 ## The community
 
