@@ -39,6 +39,22 @@ the subsequent cycling characters.  For instance, in German language cycling
 starts at `„` (*low double comma quotation mark*) which is the opening quotation
 character in German language.
 
+In a similar way <kbd>-</kbd> cycles through different variants of hyphens and
+dashes.  <kbd>.</kbd> continues to insert a normal dot, but inserting three dots
+in a row will insert a unicode ellipsis `…`.
+
+To enable Typo Mode add it to the hooks of the modes you’d like to use Typo Mode
+in:
+
+```cl
+(add-hook 'text-mode-hook #'typo-mode)
+```
+
+If you use [Spacemacs][] enable the [Typography layer][layer].
+
+[Spacemacs]: https://github.com/syl20bnr/spacemacs
+[layer]: https://github.com/syl20bnr/spacemacs/tree/develop/layers/typography
+
 Tildify Mode
 ============
 
