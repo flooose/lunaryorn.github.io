@@ -1,6 +1,7 @@
 ---
 title: "Emacs Spotlight: Typographic Editing Modes"
 tags: emacs-spotlight
+category: emacs
 layout: series-post
 ---
 
