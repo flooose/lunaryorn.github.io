@@ -25,7 +25,7 @@ Emacs packages:
 
 I frequently write about Emacs; these are my latest posts:
 
-{% include post-list.html posts=site.categories.emacs limit=5 %}
+{% include post-list.html posts=site.categories.emacs limit=5 include_excerpt=true %}
 
 [Spacemacs]: https://github.com/syl20bnr/spacemacs
 [Flycheck]: http://www.flycheck.org
