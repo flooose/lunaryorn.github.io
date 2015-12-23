@@ -59,8 +59,27 @@ Tildify Mode
 ============
 
 Tildify Mode is a built-in mode in Emacs 25 and upwards that automatically
-inserts [non-breaking spaces][nbsp].
+inserts [non-breaking spaces][nbsp] when appropriate.  A non-breaking space
+is like a normal whitespace but inhibits word wrapping.  It is typically used
+after single letters where a line breaking would be confusing and distracting.
+For instance, it’s bad style to have a line break after “I”, because a single
+letter at the end of a line is too easily overlooked.
 
+A good word processor or a type setting system such as LaTeX normally handles
+non-breaking spaces automatically, but the layout engines of browser or plain
+text viewers are not that sophisticated and require explicit non-breaking spaces
+to achieve a good text layout.  Tildify Mode helps you by inserting non-breaking
+spaces at obvious places such as single letter words.
+
+Like Typo Mode you can enable Tildify Mode by adding it to appropriate hooks,
+e.g.
+
+``` cl
+(when (version<= "25" emacs-version)
+  (add-hook 'text-mode-hook #'tildify-mode))
+```
+
+Tildify Mode is also part of the Typography layer of Spacemacs.
 
 [Typo Mode]: https://github.com/jorgenschaefer/typoel
 [nbsp]: https://en.wikipedia.org/wiki/Non-breaking_space
