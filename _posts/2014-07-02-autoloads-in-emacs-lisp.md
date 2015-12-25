@@ -34,9 +34,9 @@ available.  You can add such autoloads to your `init.el` yourself in order to
 autoload 3rd party libraries.  In the old days before package.el, this was very
 common.
 
-Note the emphasis on *evaluation*.  No autoloads are established by merely
-writing this expression somewhere.  Emacs must evaluate it, which essentially
-means that Emacs loads a file which contains this expression.
+Note the emphasis on *evaluation*.  No autoloads are added by merely writing
+this expression somewhere.  Emacs must evaluate it, which essentially means that
+Emacs loads a file which contains this expression.
 
 Now obviously it doesn't make any sense to put autoloads into the very same file
 that also contains the definition of the autoloaded function.  Emacs would load
@@ -48,15 +48,14 @@ available right away and leads the purpose of autoloads ad absurdum.
 Autoload files
 ==============
 
-Hence autoloads should be in a separate file, which ideally contains only
-autoloads, and little else, so that it loads very fast.  Emacs calls these files
-“autoload files”.
+Hence autoloads are typically in a separate file, which contains only autoloads
+and nothing else.  Emacs calls these files “autoload files”.
 
 Autoload cookies
 ================
 
 Manually maintaining autoload files to keep them in sync with the actual
-definitions is tiresome and error-prone, so Emacs provides
+definitions is tiresome and error-prone.  Emacs provides
 [update-file-autoloads][ufa] and [update-directory-autoloads][uda] to automate
 this process.
 
@@ -86,8 +85,8 @@ autoloading, `update-file-autoloads` copies the expression verbatim.  This is
 used to register libraries in specific Emacs extension points, like
 `auto-modes-alist`.
 
-[ufa]: el-function:update-file-autoloads
-[uda]: el-function:update-directory-autoloads
+[ufa]: https://www.gnu.org/software/emacs/manual/html_node/elisp/Autoload.html#index-update_002dfile_002dautoloads
+[uda]: https://www.gnu.org/software/emacs/manual/html_node/elisp/Autoload.html#index-update_002ddirectory_002dautoloads
 
 Package autoloads
 =================
@@ -146,11 +145,9 @@ Emacs Lisp API for autoloads
 ============================
 
 Emacs Lisp has some functions to work with autoloads.  In addition to
-[autoload](el-function:autoload) to create autoloads, there are
-[autoloadp](el-function:autoloadp) and
-[autoload-do-load](el-function:autoload-do-load).  The first lets you check
-whether an object is an autoload object, and the latter loads the underlying
-library of an autoload.
+[autoload][al] to create autoloads, there are [autoloadp][alp] and
+[autoload-do-load][adl].  The first lets you check whether an object is an
+autoload object, and the latter loads the underlying library of an autoload.
 
 Note that both functions work on *autoload objects*, and *not* on symbols with
 attached autoloads.  Hence, `(autoloadp 'foo)` checks whether the symbol `foo`
@@ -164,6 +161,10 @@ To check whether `foo` refers to an autoloaded function you need to check the
 ```cl
 (autoloadp (function-definition 'foo))
 ```
+
+[al]: https://www.gnu.org/software/emacs/manual/html_node/elisp/Autoload.html#index-autoload-1
+[alp]: https://www.gnu.org/software/emacs/manual/html_node/elisp/Autoload.html#index-autoloadp
+[adl]: https://www.gnu.org/software/emacs/manual/html_node/elisp/Autoload.html#index-autoload_002ddo_002dload
 
 [^1]: Single file packages are standalone Emacs Lisp files with special file
       headers.
