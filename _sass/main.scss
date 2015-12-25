@@ -296,6 +296,11 @@ pre {
 
 .navbar-brand {
   display: inline-block;
+
+  img {
+    height: 64px;
+    width: 64px;
+  }
 }
 
 .navbar-nav {

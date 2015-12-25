@@ -24,20 +24,10 @@ require 'rake/clean'
 task default: :build
 
 # File rules
-LOGO_HEIGHT = 48
-LOGO = 'logo.png'
 ICON_SIZES = [16, 32, 96, 196]
 
 def optimise(image)
   sh 'optipng', '-quiet', image
-end
-
-file LOGO => ['logo.svg'] do |t|
-  sh 'inkscape',
-    '-e', t.name, '-C', '-y', '0',
-    '-h', LOGO_HEIGHT.to_s,
-    t.prerequisites.first
-  optimise(icon_name)
 end
 
 def icon(size)
@@ -75,7 +65,7 @@ namespace :build do
   end
 
   desc 'Build images'
-  task images: [LOGO] + icons
+  task images: icons
 end
 
 desc 'Build everything'
