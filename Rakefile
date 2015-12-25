@@ -98,6 +98,11 @@ namespace :verify do
        '--config', '_sass/.scss-lint.yml', '_sass/'
   end
 
+  desc 'Verify the generated Atom feeds'
+  task feed: ['build:site'] do
+    sh 'xmllint', '--noout', '_site/feed.atom'
+  end
+
   desc 'Verify the generated HTML'
   task html: ['build:site'] do
     sh 'bundle', 'exec', 'htmlproof', '_site/',
@@ -111,6 +116,7 @@ desc 'Verify the site'
 task verify: ['verify:jekyll',
               'verify:ghpages',
               'verify:scss',
+              'verify:feed',
               'verify:html']
 
 namespace :run do
