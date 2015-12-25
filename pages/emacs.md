@@ -4,6 +4,9 @@ layout: page
 excerpt: |
   I use Spacemacs for most of my daily work and maintain a couple of
   Emacs packages.
+extra_feeds:
+  - title: "Emacs. What else? (Emacs posts)"
+    url: "/emacs.atom"
 ---
 
 I use [Spacemacs][], a [GNU Emacs] distribution, for most of my daily work, with

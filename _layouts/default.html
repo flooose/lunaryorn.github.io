@@ -30,7 +30,10 @@
 
     <link rel="copyright" href="{{site.url}}{{site.baseurl}}/pages/licensing.html">
 
-    {% include feed-meta.html url="/feed.atom" %}
+    {% include feed-meta.html url="/feed.atom" title=site.title %}
+    {% for feed in page.extra_feeds %}
+    {% include feed-meta.html url=feed.url title=feed.title %}
+    {% endfor %}
   </head>
   <body>
     {% if site.environment == 'production' %}{% include ga.html %}{% endif %}
