@@ -19,9 +19,8 @@ Emacs Lisp offers an [autoloading mechanism][autoload] to load libraries on
 demand.  Typically this is used to make interactive commands available to the
 user without entirely loading the corresponding library upfront.
 
-Autoloads are created with the [autoload](el-function:autoload) function.  An
-autoload for the function `magit-status` in the library `magit.el` would look
-like this:
+Autoloads are created with the [autoload][al] function.  An autoload for the
+function `magit-status` in the library `magit.el` would look like this:
 
 ```cl
 (autoload 'magit-status "magit" "Open a Magit status buffer […]" t nil)
@@ -152,8 +151,7 @@ autoload object, and the latter loads the underlying library of an autoload.
 Note that both functions work on *autoload objects*, and *not* on symbols with
 attached autoloads.  Hence, `(autoloadp 'foo)` checks whether the symbol `foo`
 is autoloaded, which it obviously isn't: Symbols are not loaded at all.  They
-are directly created by the reader, or explicitly with
-[intern](el-function:intern).
+are directly created by the reader, or explicitly with [intern][].
 
 To check whether `foo` refers to an autoloaded function you need to check the
 *function definition* of `foo`:
@@ -165,6 +163,7 @@ To check whether `foo` refers to an autoloaded function you need to check the
 [al]: https://www.gnu.org/software/emacs/manual/html_node/elisp/Autoload.html#index-autoload-1
 [alp]: https://www.gnu.org/software/emacs/manual/html_node/elisp/Autoload.html#index-autoloadp
 [adl]: https://www.gnu.org/software/emacs/manual/html_node/elisp/Autoload.html#index-autoload_002ddo_002dload
+[intern]: https://www.gnu.org/software/emacs/manual/html_node/elisp/Creating-Symbols.html#index-intern
 
 [^1]: Single file packages are standalone Emacs Lisp files with special file
       headers.

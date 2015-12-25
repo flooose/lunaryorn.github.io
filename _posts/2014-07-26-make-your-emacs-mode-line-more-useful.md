@@ -35,10 +35,9 @@ https://www.gnu.org/software/emacs/manual/html_node/elisp/Mode-Line-Format.html#
 Customizing the entire mode line
 ================================
 
-The overall appearance of the mode line is set up in the
-[mode-line-format](el-variable:mode-line-format) option.  After some digging and
-fiddling, mine now looks as follows, which corresponds to the screenshot
-above:
+The overall appearance of the mode line is set up in the [mode-line-format][mlf]
+option.  After some digging and fiddling, mine now looks as follows, which
+corresponds to the screenshot above:
 
 ```cl
 (setq-default mode-line-format
@@ -61,6 +60,8 @@ above:
                 ;; And the modes, which I don't really care for anyway
                 " " mode-line-modes mode-line-end-spaces))
 ```
+
+[mlf]: https://www.gnu.org/software/emacs/manual/html_node/elisp/Mode-Line-Top.html#index-mode_002dline_002dformat
 
 Understanding `mode-line-format`
 ================================

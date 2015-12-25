@@ -105,7 +105,7 @@ initialization:
 ```
 
 If you need to, you can still load the global site initialization *explicitly*
-from [site-run-file](el-variable:site-run-file):
+from [site-run-file][srf]:
 
 ```cl
 (load site-run-file 'no-error 'no-message)
@@ -113,12 +113,13 @@ from [site-run-file](el-variable:site-run-file):
 
 [--script]: https://www.gnu.org/software/emacs/manual/html_node/emacs/Initial-Options.html#index-g_t_002d_002dscript-4535d
 [--batch]: https://www.gnu.org/software/emacs/manual/html_node/emacs/Initial-Options.html#index-g_t_002d_002dbatch-4534
+[srf]: https://www.gnu.org/software/emacs/manual/html_node/elisp/Init-File.html#index-site_002drun_002dfile
 
 Processing command line arguments
 =================================
 
-Emacs exposes the command line arguments in
-[command-line-args-left](el-variable:command-line-args-left) alias `argv`[^3]:
+Emacs exposes the command line arguments in [command-line-args-left][clal] alias
+`argv`[^3]:
 
 ```cl
 #!/bin/sh
@@ -262,6 +263,7 @@ Hello Donald Duck
 ```
 
 [#15]: https://github.com/lunaryorn/blog/issues/15
+[clal]: https://www.gnu.org/software/emacs/manual/html_node/elisp/Command_002dLine-Arguments.html#index-command_002dline_002dargs_002dleft
 
 Standard output and input
 =========================
@@ -277,9 +279,9 @@ Hello Donald Duck!
 
 `message` writes to standard *error*, but a good script should use standard
 output.  For this output stream, there's another, lesser known family of
-functions: [print](el-function:print), [prin1](el-function:prin1),
-[princ](el-function:princ) and friends.  All of these functions output “printed
-representations” of Lisp objects, with varying levels formatting and quoting.
+functions: [print][], [prin1][], [princ][] and friends.  All of these functions
+output “printed representations” of Lisp objects, with varying levels formatting
+and quoting.
 
 For simple printing, `princ` is the right candidate, since it prints without any
 formatting and quoting.  And naturally the unquoted “printed representation” of
@@ -298,9 +300,8 @@ names to standard output:
 ```
 
 Unlike `message`, `princ` doesn't take a format string, so we need to call
-[format](el-function:format) ourselves.  [terpri](el-function:terpri) is a
-little utility that just prints a newline.  The result is as expected, and we
-can also redirect the output now:
+[format][] ourselves.  [terpri][] is a little utility that just prints a
+newline.  The result is as expected, and we can also redirect the output now:
 
 ```
 $ ./hello.el 'John Doe' 'Donald Duck'
@@ -350,6 +351,12 @@ A patch to hide input on batch mode is committed to Emacs trunk, but as of now,
 it will *not* be part of upcoming Emacs 24.4.  Be careful what you read from
 standard input!
 
+[print]: https://www.gnu.org/software/emacs/manual/html_node/elisp/Output-Functions.html#index-print
+[prin1]: https://www.gnu.org/software/emacs/manual/html_node/elisp/Output-Functions.html#index-prin1
+[princ]: https://www.gnu.org/software/emacs/manual/html_node/elisp/Output-Functions.html#index-princ
+[format]: https://www.gnu.org/software/emacs/manual/html_node/elisp/Formatting-Strings.html#index-format
+[terpri]: https://www.gnu.org/software/emacs/manual/html_node/elisp/Output-Functions.html#index-terpri
+
 Debugging
 =========
 
@@ -377,7 +384,7 @@ In interactive mode, we debug such errors by simply retrying the command after
 creates a backtrace if an error occurs.
 
 In batch mode, we can't “retry”, though, so we need to enable backtraces right
-away, by setting [debug-on-error](el-variable:debug-on-error):
+away, by setting [debug-on-error][doe]:
 
 ```cl
 #!/bin/sh
@@ -405,6 +412,8 @@ Debugger entered--Lisp error: (wrong-type-argument number-or-marker-p "10")
   normal-top-level()
 ```
 
+[doe]: https://www.gnu.org/software/emacs/manual/html_node/elisp/Error-Debugging.html#index-debug_002don_002derror
+
 Keep your hands clean
 =====================
 
@@ -430,11 +439,13 @@ functional language such as OCaml or Haskell.
 
 [^2]: See <http://stackoverflow.com/a/6259330/355252>
 
-[^3]: There is also [command-line-args](el-variable:command-line-args), but that
-      holds *all* Emacs options, including those that Emacs already interpreted,
-      and is of little use in scripts.
+[^3]: There is also [command-line-args][cla], but that holds *all* Emacs
+      options, including those that Emacs already interpreted, and is of little
+      use in scripts.
 
 [^4]: See <http://stackoverflow.com/a/6807133/355252>
 
 [^5]: <http://stackoverflow.com/a/2906967/355252>.  All credits go to SO here, I'd
       never have figured this out by myself.
+
+[cla]: https://www.gnu.org/software/emacs/manual/html_node/elisp/Command_002dLine-Arguments.html#index-command_002dline_002dargs
