@@ -1,0 +1,5 @@
+---
+layout: null
+---
+
+{% include feed.xml posts=site.categories.emacs limit=20 %}

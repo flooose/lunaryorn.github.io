@@ -98,9 +98,13 @@ namespace :verify do
        '--config', '_sass/.scss-lint.yml', '_sass/'
   end
 
+  FEEDS = FileList['_site/*.atom']
+
   desc 'Verify the generated Atom feeds'
   task feed: ['build:site'] do
-    sh 'xmllint', '--noout', '_site/feed.atom'
+    FEEDS.each do |feed|
+      sh 'xmllint', '--noout', feed
+    end
   end
 
   desc 'Verify the generated HTML'
