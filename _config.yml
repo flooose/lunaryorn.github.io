@@ -1,5 +1,6 @@
 name: lunaryorn
-description: "Emacs.  What else?  A bit of functional programming probably…"
+title: "Emacs.  What else?"
+description: "A personal blog about Emacs and functional programming"
 url: "http://www.lunaryorn.com"
 
 baseurl: ""
