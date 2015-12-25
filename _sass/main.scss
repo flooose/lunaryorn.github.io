@@ -285,7 +285,8 @@ pre {
 // Navigation
 .navbar {
   border-bottom: 1px solid $border-color;
-  padding: .8em 0;
+  padding-bottom: .4em;
+  padding-top: .8em;
 }
 
 .navbar-header {
@@ -430,8 +431,8 @@ pre {
 
   .navbar-header {
     display: inline;
-    margin-left: .8em;
-    margin-right: 1.5em;
+    margin-left: .5em;
+    margin-right: .5em;
   }
 
   .navbar-nav {
