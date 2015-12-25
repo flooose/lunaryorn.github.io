@@ -26,7 +26,8 @@ Emacs packages:
 - [EPL][] is a library to work with the Emacs package manager.  It lets you
   query the package database, install or remove packages, and perform upgrades.
 
-I frequently write about Emacs; these are my latest posts:
+I frequently write about Emacs; these are my latest posts
+([Atom feed]({{site.baseurl}}/emacs.atom)):
 
 {% include post-list.html posts=site.categories.emacs limit=5 include_excerpt=true %}
 

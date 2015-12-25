@@ -1,7 +1,7 @@
 ---
 title: Emacs.  What else?
 subtitle: A bit of functional programming probably…
-layout: index
+layout: page
 ---
 
 Hello, I'm Sebastian Wiesner, software developer by occupation and by passion.
@@ -18,6 +18,14 @@ In this blog, I mostly write about Emacs, but occasionally also about other
 topics which are of course related to technology and programming.  You can find
 my open source work on [Github][], read my answers on [Stack Overflow][] and
 follow me on [Twitter][].
+
+Posts
+-----
+
+I write infrequently, mostly about Emacs and functional programming.  These are
+my latest posts ([Atom feed]({{site.baseurl}}/feed.atom)):
+
+{% include post-list.html posts=site.posts include_excerpt=true limit=10 %}
 
 [Flycheck]: http://www.flycheck.org
 [Github]: https://github.com/lunaryorn
