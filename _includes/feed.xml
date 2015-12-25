@@ -2,7 +2,8 @@
 {% if site.url %}
   {% assign url_base = site.url | append: site.baseurl %}
 {% endif %}
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:webfeeds="http://webfeeds.org/rss/1.0">
+  <webfeeds:logo>{{ '/logo.svg' | prepend: url_base | xml_escape }}</webfeeds:logo>
   <generator uri="http://jekyllrb.com" version="{{ jekyll.version }}">Jekyll</generator>
   <link href="{{ page.url | prepend: url_base }}" rel="self" type="application/atom+xml" />
   <link href="{{ url_base }}/" rel="alternate" type="text/html" />
