@@ -1,0 +1,5 @@
+---
+layout: null
+---
+
+{% include feed.xml posts=site.posts limit=20 %}

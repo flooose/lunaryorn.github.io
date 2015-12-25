@@ -34,12 +34,6 @@ format:
   date_short: "%b %d, %y"
 excerpt_separator: "<!--more-->"
 
-gems:
-  - jekyll-feed
-
-feed:
-  path: "feed.atom"
-
 sass:
   style: compressed
 
