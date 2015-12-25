@@ -40,6 +40,7 @@ $heading-color: #222;
 $secondary-color: #777;
 $border-color: #ccc;
 $quote-border-color: #eee;
+$accent-color: #f74c8f;
 
 $inline-box-shadow-color: rgba(0, 0, 0, .2);
 $inline-box-shadow-background: #fff;
@@ -135,8 +136,8 @@ blockquote {
 }
 
 a {
-  color: $main-color;
-  text-decoration: underline;
+  color: $accent-color;
+  text-decoration: none;
 
   &:hover {
     text-decoration: underline;

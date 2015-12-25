@@ -4,6 +4,7 @@
 {% endif %}
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:webfeeds="http://webfeeds.org/rss/1.0">
   <webfeeds:analytics id="{{ site.tracking.ga.id }}" engine="GoogleAnalytics"/>
+  <webfeeds:accentColor>#F74C8F</webfeeds:accentColor>
   <webfeeds:logo>{{ '/logo.svg' | prepend: url_base | xml_escape }}</webfeeds:logo>
   <generator uri="http://jekyllrb.com" version="{{ jekyll.version }}">Jekyll</generator>
   <link href="{{ page.url | prepend: url_base }}" rel="self" type="application/atom+xml" />
