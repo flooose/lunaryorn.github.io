@@ -3,7 +3,7 @@
   {% assign url_base = site.url | append: site.baseurl %}
 {% endif %}
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:webfeeds="http://webfeeds.org/rss/1.0">
-  <webfeeds:analytics id="{{ site.tracking.ga.id }}" engine="GoogleAnalytics"/>
+  <webfeeds:analytics id="{{ site.data.tracking.ga.id }}" engine="GoogleAnalytics"/>
   <webfeeds:related layout="card" target="browser"/>
   <webfeeds:accentColor>#F74C8F</webfeeds:accentColor>
   <webfeeds:logo>{{ '/logo.svg' | prepend: url_base | xml_escape }}</webfeeds:logo>
