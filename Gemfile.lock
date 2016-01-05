@@ -112,7 +112,7 @@ GEM
     minitest (5.8.3)
     multipart-post (2.0.0)
     net-dns (0.8.0)
-    nokogiri (1.6.7)
+    nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
     octokit (4.2.0)
       sawyer (~> 0.6.0, >= 0.5.3)
@@ -120,12 +120,13 @@ GEM
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.11)
-    public_suffix (1.5.2)
+    public_suffix (1.5.3)
     pygments.rb (0.6.3)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.2.0)
     rainbow (2.0.0)
-    rb-fsevent (0.9.6)
+    rake (10.4.2)
+    rb-fsevent (0.9.7)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     rdiscount (2.1.8)
@@ -138,7 +139,6 @@ GEM
     scss_lint (0.43.2)
       rainbow (~> 2.0)
       sass (~> 3.4.15)
-    scss_lint_reporter_checkstyle (0.2.0)
     terminal-table (1.5.2)
     thread_safe (0.3.5)
     toml (0.1.2)
@@ -154,10 +154,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages
+  github-pages (= 40)
   html-proofer
+  json
+  rake
   scss_lint
-  scss_lint_reporter_checkstyle
 
 BUNDLED WITH
-   1.10.6
+   1.11.2
