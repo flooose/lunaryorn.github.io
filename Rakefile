@@ -23,6 +23,9 @@ require 'bundler/setup'
 require 'rake'
 require 'rake/clean'
 
+require 'html/proofer'
+require 'scss_lint/rake_task'
+
 # Default task
 task default: :build
 
@@ -73,9 +76,9 @@ namespace :verify do
   end
 
   desc 'Verify the SCSS sources'
-  task :scss do
-    sh 'bundle', 'exec', 'scss-lint',
-       '--config', '_sass/.scss-lint.yml', '_sass/'
+  SCSSLint::RakeTask.new(:scss) do |t|
+    t.config = '_sass/.scss-lint.yml'
+    t.files = ['_sass/']
   end
 
   FEEDS = FileList['_site/*.atom']
@@ -89,10 +92,12 @@ namespace :verify do
 
   desc 'Verify the generated HTML'
   task html: ['build:site'] do
-    sh 'bundle', 'exec', 'htmlproof', '_site/',
-      '--disable-external',
-      '--check-html',
-      '--check-favicon'
+    HTML::Proofer
+      .new('_site',
+           disable_external: true,
+           check_html: true,
+           check_favicon: true)
+      .run
   end
 end
 
