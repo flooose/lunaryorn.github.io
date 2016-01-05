@@ -56,6 +56,11 @@ namespace :verify do
     sh 'bundle', 'exec', 'jekyll', 'doctor'
   end
 
+  desc 'Verify the Travis CI configuration'
+  task :travis do
+    sh 'bundle', 'exec', 'travis', 'lint', '--exit-code', '--no-interactive'
+  end
+
   desc 'Verify the Github Pages setup'
   task :ghpages do
     sh 'bundle', 'exec', 'github-pages', 'health-check'
@@ -75,6 +80,7 @@ end
 
 desc 'Verify the site'
 task verify: ['verify:jekyll',
+              'verify:travis',
               'verify:ghpages',
               'verify:scss',
               'verify:ruby']
