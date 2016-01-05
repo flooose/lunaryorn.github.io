@@ -18,6 +18,9 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+require 'bundler/setup'
+
+require 'rake'
 require 'rake/clean'
 
 # Default task
@@ -42,19 +45,6 @@ def icon(size)
 end
 
 icons = ICON_SIZES.map { |size| icon(size) }
-
-namespace :init do
-  CLOBBER << '.bundle'
-  CLOBBER << 'vendor'
-
-  desc 'Install dependencies via bundle'
-  task :dependencies do
-    sh 'bundle', 'install', '--path', 'vendor'
-  end
-end
-
-desc 'Initialize the repository'
-task init: ['init:dependencies']
 
 namespace :build do
   CLOBBER << '_site'
