@@ -50,21 +50,6 @@ end
 
 icons = ICON_SIZES.map { |size| icon(size) }
 
-namespace :build do
-  CLOBBER << '_site'
-
-  desc 'Build the site'
-  task :site do
-    sh 'bundle', 'exec', 'jekyll', 'build'
-  end
-
-  desc 'Build images'
-  task images: icons
-end
-
-desc 'Build everything'
-task build: ['build:site']
-
 namespace :verify do
   desc 'Verify the Jekyll configuration'
   task :jekyll do
@@ -86,17 +71,39 @@ namespace :verify do
   RuboCop::RakeTask.new(:ruby) do |t|
     t.patterns = ['Rakefile']
   end
+end
 
-  FEEDS = FileList['_site/*.atom']
+desc 'Verify the site'
+task verify: ['verify:jekyll',
+              'verify:ghpages',
+              'verify:scss',
+              'verify:ruby']
 
-  desc 'Verify the generated Atom feeds'
+namespace :build do
+  CLOBBER << '_site'
+
+  desc 'Build the site'
+  task :site do
+    sh 'bundle', 'exec', 'jekyll', 'build'
+  end
+
+  desc 'Build images'
+  task images: icons
+end
+
+desc 'Build everything'
+task build: ['build:site']
+
+namespace :test do
+  desc 'Test the generated Atom feeds'
   task feed: ['build:site'] do
-    FEEDS.each do |feed|
+    feeds = FileList['_site/*.atom']
+    feeds.each do |feed|
       sh 'xmllint', '--noout', feed
     end
   end
 
-  desc 'Verify the generated HTML'
+  desc 'Test the generated HTML'
   task html: ['build:site'] do
     HTML::Proofer
       .new('_site',
@@ -107,13 +114,8 @@ namespace :verify do
   end
 end
 
-desc 'Verify the site'
-task verify: ['verify:jekyll',
-              'verify:ghpages',
-              'verify:scss',
-              'verify:ruby',
-              'verify:feed',
-              'verify:html']
+desc 'Test everything'
+task test: ['test:feed', 'test:html']
 
 namespace :run do
   desc 'Preview the site'

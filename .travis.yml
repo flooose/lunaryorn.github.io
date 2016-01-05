@@ -5,8 +5,8 @@ rvm:
 cache:
   - bundler
 script:
-  - rake build
   - rake verify
+  - rake test
 env:
   global:
     # Speeds up installation of nokogiri
