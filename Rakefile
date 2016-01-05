@@ -25,6 +25,7 @@ require 'rake/clean'
 
 require 'html/proofer'
 require 'scss_lint/rake_task'
+require 'rubocop/rake_task'
 
 # Default task
 task default: :build
@@ -40,8 +41,8 @@ def icon(size)
   icon_name = "icon-#{size}.png"
   file icon_name => ['logo.svg'] do |t|
     sh 'inkscape',
-      '-e', t.name, '-C', '-y', '0', '-h', size.to_s,
-      t.prerequisites.first
+       '-e', t.name, '-C', '-y', '0', '-h', size.to_s,
+       t.prerequisites.first
     optimise(icon_name)
   end
   icon_name
@@ -81,6 +82,11 @@ namespace :verify do
     t.files = ['_sass/']
   end
 
+  desc 'Verify Ruby sources'
+  RuboCop::RakeTask.new(:ruby) do |t|
+    t.patterns = ['Rakefile']
+  end
+
   FEEDS = FileList['_site/*.atom']
 
   desc 'Verify the generated Atom feeds'
@@ -105,6 +111,7 @@ desc 'Verify the site'
 task verify: ['verify:jekyll',
               'verify:ghpages',
               'verify:scss',
+              'verify:ruby',
               'verify:feed',
               'verify:html']
 
