@@ -124,10 +124,16 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     maruku (0.7.0)
+    mdl (0.2.1)
+      kramdown (~> 1.5, >= 1.5.0)
+      mixlib-cli (~> 1.5, >= 1.5.0)
+      mixlib-config (~> 2.1, >= 2.1.0)
     mercenary (0.3.5)
     method_source (0.8.2)
     mini_portile2 (2.0.0)
     minitest (5.8.3)
+    mixlib-cli (1.5.0)
+    mixlib-config (2.2.1)
     multi_json (1.11.2)
     multipart-post (2.0.0)
     net-dns (0.8.0)
@@ -210,6 +216,7 @@ DEPENDENCIES
   github-pages (= 40)
   html-proofer
   json
+  mdl
   rake
   rubocop
   scss_lint

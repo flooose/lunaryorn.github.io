@@ -66,7 +66,15 @@ namespace :verify do
     sh 'bundle', 'exec', 'github-pages', 'health-check'
   end
 
-  desc 'Verify the SCSS sources'
+  desc 'Verify Markdown documents'
+  task :markdown do
+    sources = FileList['*.md', 'pages/*.md', '_posts/*.md']
+    sh('bundle', 'exec', 'mdl',
+       '--style', '_admin/markdown_style',
+       *sources)
+  end
+
+  desc 'Verify SCSS sources'
   SCSSLint::RakeTask.new(:scss) do |t|
     t.config = '_sass/.scss-lint.yml'
     t.files = ['_sass/']
@@ -82,6 +90,7 @@ desc 'Verify the site'
 task verify: ['verify:jekyll',
               'verify:travis',
               'verify:ghpages',
+              'verify:markdown',
               'verify:scss',
               'verify:ruby']
 

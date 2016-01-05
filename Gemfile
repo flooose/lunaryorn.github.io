@@ -14,5 +14,6 @@ gem 'github-pages', versions['github-pages']
 gem 'rake'
 gem 'travis'
 gem 'html-proofer'
+gem 'mdl'
 gem 'scss_lint', require: false
 gem 'rubocop'
