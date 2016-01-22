@@ -3,8 +3,7 @@ title: "Emacs Spotlight: Ansible Documention in Emacs"
 category: emacs
 tags: emacs-spotlight
 layout: series-post
-twittercard: summary_large_image
-twittercardimage: /images/ansible-doc.png
+image: /images/ansible-doc.png
 ---
 
 **Update** *(October 2, 2014)*: This feature is now available in the

@@ -1,7 +1,7 @@
 ---
 title: Reproduce bugs in emacs -Q
 category: emacs
-twitter_large_image: /images/emacs-Q.png
+image: /images/emacs-Q.png
 ---
 
 > Please reproduce this issue in `emacs -Q`.
