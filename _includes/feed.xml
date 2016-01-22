@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 {% if site.url %}
-  {% assign url_base = site.url | append: site.baseurl %}
+{% assign url_base = site.url | append: site.baseurl %}
+{% elsif site.github.url %}
+{% assign url_base = site.github.url %}
 {% endif %}
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:webfeeds="http://webfeeds.org/rss/1.0">
   <webfeeds:analytics id="{{ site.data.tracking.ga.id }}" engine="GoogleAnalytics"/>

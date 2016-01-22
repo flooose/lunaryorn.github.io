@@ -126,8 +126,6 @@ task test: ['test:feed', 'test:html']
 namespace :run do
   desc 'Preview the site'
   task :preview do
-    sh 'bundle', 'exec', 'jekyll', 'serve',
-       '--config', '_config.yml,_config_dev.yml',
-       '-w', '-D', '--future'
+    sh 'bundle', 'exec', 'jekyll', 'serve', '-w', '-D', '--future'
   end
 end

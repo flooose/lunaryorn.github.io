@@ -165,7 +165,7 @@ name without modifications.  The result is then truncated to 20 characters as
 before.
 
 <figure>
-<img src="{{site.url}}{{site.baseurl}}/images/truncated-which-func-mode.png"
+<img src="{{site.baseurl}}/images/truncated-which-func-mode.png"
      alt="Mode line with truncated which-function for Python Mode"/>
 </figure>
 

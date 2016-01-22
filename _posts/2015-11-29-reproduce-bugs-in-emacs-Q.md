@@ -25,7 +25,7 @@ slightly more convoluted command `open --new -a Emacs.app --args -Q` to start a
 fresh GUI Emacs.  You get a bare-bones Emacs that looks like this:
 
 <figure>
-<img src="{{site.url}}{{site.baseurl}}/images/emacs-Q.png"
+<img src="{{site.baseurl}}/images/emacs-Q.png"
      alt="Bare-bones emacs -Q"/>
 <figcaption>A bare-bones <code>emacs -Q</code></figcaption>
 </figure>

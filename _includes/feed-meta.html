@@ -1,1 +1,6 @@
-<link type="application/atom+xml" rel="alternate" href="{{ include.url | prepend: site.baseurl | prepend: site.url }}" title="{{ include.title }}">
+{% if site.url %}
+{% assign base = site.url | append: site.url %}
+{% elsif site.github.url %}
+{% assign base = site.github.url %}
+{% endif %}
+<link type="application/atom+xml" rel="alternate" href="{{ include.url | prepend: base }}" title="{{ include.title }}">

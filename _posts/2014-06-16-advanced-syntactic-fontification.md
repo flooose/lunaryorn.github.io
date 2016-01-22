@@ -261,7 +261,7 @@ With this tool, we can now verify that our code indeed works, by checking the
 text properties:
 
 <figure>
-<img src="{{site.url}}{{site.baseurl}}/images/describe-char.png"
+<img src="{{site.baseurl}}/images/describe-char.png"
      alt="describe-char buffer shown text properties"/>
 </figure>
 

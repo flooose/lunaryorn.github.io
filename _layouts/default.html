@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    {% if site.url %}
+    {% assign baseurl = site.url | append: site.baseurl %}
+    {% elsif site.github.url %}
+    {% assign baseurl = site.github.url %}
+    {% endif %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,14 +16,14 @@
     <meta name="author" content="{{ site.author.name }}">
     {% endif %}
 
-    <link rel="icon" sizes="16x16"   href="{{site.baseurl}}/icon-16.png">
-    <link rel="icon" sizes="32x32"   href="{{site.baseurl}}/icon-32.png">
-    <link rel="icon" sizes="96x96"   href="{{site.baseurl}}/icon-96.png">
-    <link rel="icon" sizes="196x196" href="{{site.baseurl}}/icon-196.png">
+    <link rel="icon" sizes="16x16"   href="{{baseurl}}/icon-16.png">
+    <link rel="icon" sizes="32x32"   href="{{baseurl}}/icon-32.png">
+    <link rel="icon" sizes="96x96"   href="{{baseurl}}/icon-96.png">
+    <link rel="icon" sizes="196x196" href="{{baseurl}}/icon-196.png">
 
-    <link rel="stylesheet" href="{{site.baseurl}}/lunarsite.css">
+    <link rel="stylesheet" href="{{baseurl}}/lunarsite.css">
 
-    <link rel="copyright" href="{{site.url}}{{site.baseurl}}/pages/licensing.html">
+    <link rel="copyright" href="{{baseurl}}/pages/licensing.html">
 
     {% include feed-meta.html url="/feed.atom" title=site.title %}
     {% for feed in page.extra_feeds %}
@@ -33,13 +38,13 @@
       <div class="container">
         <div class="navbar-header">
           <a class="navbar-brand" href="{{baseurl}}/index.html">
-            <img alt="My personal logo" src="{{site.baseurl}}/logo.svg">
+            <img alt="My personal logo" src="{{baseurl}}/logo.svg">
           </a>
         </div>
         <ul class="navbar-nav">
-          <li><a href="{{site.baseurl}}/archive.html">Archive</a></li>
-          <li><a href="{{site.baseurl}}/pages/emacs.html">Emacs</a></li>
-          <li><a href="{{site.baseurl}}/pages/colophon.html">Colophon</a></li>
+          <li><a href="{{baseurl}}/archive.html">Archive</a></li>
+          <li><a href="{{baseurl}}/pages/emacs.html">Emacs</a></li>
+          <li><a href="{{baseurl}}/pages/colophon.html">Colophon</a></li>
         </ul>
       </div>
     </div>
@@ -47,10 +52,10 @@
       {{ content }}
       <footer class="page-footer">
         <p>
-          <a href="{{site.baseurl}}/archive.html">Archive</a>
-          · <a href="{{site.baseurl}}/feed.atom">Feed</a>
+          <a href="{{baseurl}}/archive.html">Archive</a>
+          · <a href="{{baseurl}}/feed.atom">Feed</a>
           {% if page.path %}
-          · <a href="{{ site.data.github.url }}/blob/master/{{page.path}}">Source on Github</a>
+          · <a href="{{ site.github.repository_url }}/blob/master/{{page.path}}">Source on Github</a>
           {% endif %}
         </p>
         <p>
@@ -58,7 +63,7 @@
            <a target="_blank" href="http://www.gnu.org/software/emacs/">Emacs</a>,
            <a target="_blank" href="http://jekyllrb.com">Jekyll</a>, and
            <a target="_blank" href="https://github.com">Github</a>
-           (<a href="{{site.baseurl}}/pages/colophon.html">colophon</a>).<br>
+           (<a href="{{baseurl}}/pages/colophon.html">colophon</a>).<br>
         </p>
         <p>
            I'm on <a target="_blank" href="https://github.com/lunaryorn">Github</a>,
@@ -81,7 +86,7 @@
           Attribution 4.0 International License</a>. Permissions beyond the
           scope of this license may be available
           at <a xmlns:cc="http://creativecommons.org/ns#"
-          href="{{site.url}}{{site.baseurl}}/pages/licensing.html"
+          href="{{baseurl}}/pages/licensing.html"
           rel="cc:morePermissions">Licensing</a>.
         </p>
       </footer>

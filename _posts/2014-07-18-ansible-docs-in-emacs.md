@@ -77,7 +77,7 @@ Now we can conveniently lookup documentation with <kbd>C-c h a</kbd> in a YAML
 Mode buffer:
 
 <figure>
-<img src="{{site.url}}{{site.baseurl}}/images/ansible-doc.png"
+<img src="{{site.baseurl}}/images/ansible-doc.png"
      alt="Documentation of ansible apt module in Emacs buffer"/>
 </figure>
 
