@@ -1,4 +1,4 @@
-# Copyright (c) 2015  Sebastian Wiesner <swiesner@lunaryorn.com>
+# Copyright (c) 2015-2016  Sebastian Wiesner <swiesner@lunaryorn.com>
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -31,7 +31,7 @@ require 'rubocop/rake_task'
 task default: :build
 
 # File rules
-ICON_SIZES = [16, 32, 96, 196]
+ICON_SIZES = [16, 32, 96, 196].freeze
 
 def optimise(image)
   sh 'optipng', '-quiet', image
