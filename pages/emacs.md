@@ -10,8 +10,8 @@ extra_feeds:
 ---
 
 I use [Spacemacs][], a [GNU Emacs] distribution, for most of my daily work, with
-some custom layers in my [dotfile][] repository.  I also maintain a couple of
-Emacs packages:
+some custom layers in my [Spacemacs configuration][spacemacsd].  I also maintain
+a couple of Emacs packages:
 
 - [Flycheck][] is an on-the-fly syntax checking extension, intended as
   replacement for Flymake, with better performance, more supported languages and
@@ -39,4 +39,4 @@ I frequently write about Emacs; these are my latest posts
 [pkg-info]: https://github.com/lunaryorn/pkg-info.el
 [epl]: https://github.com/cask/epl
 [GNU Emacs]: http://www.gnu.org/software/emacs/
-[dotfile]: https://github.com/lunaryorn/dotfiles
+[spacemacsd]: https://github.com/lunaryorn/.spacemacs.d
