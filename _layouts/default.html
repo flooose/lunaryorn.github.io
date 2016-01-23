@@ -54,7 +54,7 @@
         <p>
           <a href="{{baseurl}}/archive.html">Archive</a>
           · <a href="{{baseurl}}/feed.atom">Feed</a>
-          {% if page.path %}
+          {% if site.github.repository_url and page.path %}
           · <a href="{{ site.github.repository_url }}/blob/master/{{page.path}}">Source on Github</a>
           {% endif %}
         </p>
