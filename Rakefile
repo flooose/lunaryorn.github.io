@@ -76,6 +76,19 @@ namespace :verify do
   RuboCop::RakeTask.new(:ruby) do |t|
     t.patterns = ['Rakefile']
   end
+
+  MARKDOWN_SOURCES = FileList.new('**/*.md') do |fs|
+    # Exclude all older posts from verification, until we migrate them to our
+    # markdown style.
+    fs.exclude('_posts/2013-*', '_posts/2014-*', '_posts/2015-*')
+  end
+
+  desc 'Verify Markdown documents'
+  task :markdown do
+    sh('bundle', 'exec', 'mdl',
+       '--style', '_admin/markdown_style',
+       *MARKDOWN_SOURCES)
+  end
 end
 
 desc 'Verify the site'

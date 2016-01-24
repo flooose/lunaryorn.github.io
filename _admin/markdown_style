@@ -1,0 +1,33 @@
+# -*- mode: ruby; -*-
+
+# Style definition for Flycheck's markdown documents
+
+# Include all rules
+all
+
+# Require closed atx headers
+rule 'MD003', style: :atx_closed
+
+# Require bullet for unordered lists
+rule 'MD004', style: :asterisk
+
+# Require ordered numbers in numbered lists
+rule 'MD029', style: :ordered
+
+# Require three dashes for horizontal rules
+rule 'MD035', style: '---'
+
+# Allow inline HTML
+exclude_rule 'MD033'
+
+# Do not enforce h1 header at beginning; our headers come from YAML frontmatter
+exclude_rule 'MD002'
+
+# Do not enforce blank lines around lists and headers, to allow Kramdown class
+# specifiers
+exclude_rule 'MD032'
+exclude_rule 'MD022'
+
+# Do not enforce line length limits, because these conflict with Kramdown tables
+# which do not allow hard wraps
+exclude_rule 'MD013'
