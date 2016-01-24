@@ -81,6 +81,7 @@ namespace :verify do
     # Exclude all older posts from verification, until we migrate them to our
     # markdown style.
     fs.exclude('_posts/2013-*', '_posts/2014-*', '_posts/2015-*')
+    fs.exclude('_drafts/*')
   end
 
   desc 'Verify Markdown documents'
