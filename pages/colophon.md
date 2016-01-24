@@ -6,7 +6,7 @@ excerpt: |
   Vollkorn, Lato and Source Code Pro.  The source code is available on Github.
 ---
 
-# Tooling
+## Tooling ##
 
 This blog is a static website built with pure [Jekyll][] on [Github Pages][].
 [html-proofer][] checks the generated site for invalid HTML and other mistakes.
@@ -14,7 +14,7 @@ This blog is a static website built with pure [Jekyll][] on [Github Pages][].
 [Jekyll]: http://jekyllrb.com
 [html-proofer]: https://github.com/gjtorikian/html-proofer
 
-# Style and fonts
+## Style and fonts ##
 
 The serif font on this website is [Vollkorn][] by [Friedrich Althausen][fa].  It
 comes with two stylistic sets.  The body text uses the standard, more
@@ -30,7 +30,7 @@ snippets is [Solarized Light][].
 The great book [Practical Typography][] by [Matthew Butterick][] provided much
 help and guidelines for the style of this website.
 
-# Source code, building and deployment
+## Source code, building and deployment ##
 
 I keep the Markdown sources files, HTML templates and CSS stylesheets on
 [Github][].  [Github Pages][] automatically builds and deploys the site after

@@ -13,17 +13,17 @@ I use [Spacemacs][], a [GNU Emacs] distribution, for most of my daily work, with
 some custom layers in my [Spacemacs configuration][spacemacsd].  I also maintain
 a couple of Emacs packages:
 
-- [Flycheck][] is an on-the-fly syntax checking extension, intended as
+* [Flycheck][] is an on-the-fly syntax checking extension, intended as
   replacement for Flymake, with better performance, more supported languages and
   cooler features.
-- [Puppet Mode][] is a major mode for Puppet 3 manifests.  Puppet is a
+* [Puppet Mode][] is a major mode for Puppet 3 manifests.  Puppet is a
   configuration and provisioning tool.
-- [ansible-doc][] lets you read the documentation of Ansible modules in Emacs.
-- [fancy-battery][] shows the battery status in the mode line.  It's like the
+* [ansible-doc][] lets you read the documentation of Ansible modules in Emacs.
+* [fancy-battery][] shows the battery status in the mode line.  It's like the
   built-in `display-battery-mode`, but fancier and more customisable.
-- [pkg-info][] is a library to obtain information about installed
+* [pkg-info][] is a library to obtain information about installed
   packages.  Notably it lets you query the versions of installed packages.
-- [EPL][] is a library to work with the Emacs package manager.  It lets you
+* [EPL][] is a library to work with the Emacs package manager.  It lets you
   query the package database, install or remove packages, and perform upgrades.
 
 I frequently write about Emacs; these are my latest posts

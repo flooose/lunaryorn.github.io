@@ -9,11 +9,11 @@ excerpt: |
 
 The fonts used on this site are subject to their respective licenses:
 
-- [Vollkorn](http://vollkorn-typeface.com/)
+* [Vollkorn](http://vollkorn-typeface.com/)
   ([LICENSE Vollkorn.txt](../fonts/LICENSE Vollkorn.txt))
-- [Lato](http://www.latofonts.com/lato-free-fonts/)
+* [Lato](http://www.latofonts.com/lato-free-fonts/)
   ([LICENSE Lato.txt](../fonts/LICENSE Lato.txt))
-- [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
+* [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
   ([LICENSE Source Code Pro.txt](../fonts/LICENSE Source Code Pro.txt))
 
 Except where otherwise noted this site is subject to the
@@ -23,7 +23,7 @@ license follows.  It is also available at
 
 [ccby]: http://creativecommons.org/licenses/by/4.0/
 
-```
+```text
 Attribution 4.0 International
 
 =======================================================================
@@ -59,7 +59,7 @@ exhaustive, and do not form part of our licenses.
      material not subject to the license. This includes other CC-
      licensed material, or material used under an exception or
      limitation to copyright. More considerations for licensors:
-	wiki.creativecommons.org/Considerations_for_licensors
+    wiki.creativecommons.org/Considerations_for_licensors
 
      Considerations for the public: By using one of our public
      licenses, a licensor grants the public permission to use the
@@ -75,8 +75,8 @@ exhaustive, and do not form part of our licenses.
      such as asking that all changes be marked or described.
      Although not required by our licenses, you are encouraged to
      respect those requests where reasonable. More_considerations
-     for the public: 
-	wiki.creativecommons.org/Considerations_for_licensees
+     for the public:
+    wiki.creativecommons.org/Considerations_for_licensees
 
 =======================================================================
 

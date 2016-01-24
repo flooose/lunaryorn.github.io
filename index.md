@@ -17,8 +17,7 @@ OCaml, and occasionally work on iOS Apps with Swift.  I use [Spacemacs][] for
 most of this, and maintain a couple of Emacs packages, most notably
 [Flycheck][].
 
-Posts
------
+## Posts ##
 
 I write infrequently, mostly about Emacs and functional programming.  These are
 my latest posts ([Atom feed]({{site.baseurl}}/feed.atom)):
