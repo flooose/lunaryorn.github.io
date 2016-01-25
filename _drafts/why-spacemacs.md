@@ -13,7 +13,7 @@ using Spacemacs full-time.
 
 <!--more-->
 
-[Spacemacs]: http://spacemacs.org ""
+[Spacemacs]: http://spacemacs.org
 
 ## You’re using a starter kit, why⁈##
 
@@ -89,8 +89,7 @@ are then enabled in the package configuration of a layer.
 [Magit]: http://magit.vc
 [evil-magit]: https://github.com/justbur/evil-magit
 [built-in-layers]: http://spacemacs.org/layers/LAYERS.html
-
-[layers]: http://spacemacs.org/doc/LAYERS.html ""
+[layers]: http://spacemacs.org/doc/LAYERS.html
 
 ## Dark corners ##
 
@@ -132,4 +131,4 @@ many other Emacs Lisp projects are missing.
 
 I ❤️ Spacemacs!
 
-[docs]: http://spacemacs.org/doc/DOCUMENTATION.html ""
+[docs]: http://spacemacs.org/doc/DOCUMENTATION.html
