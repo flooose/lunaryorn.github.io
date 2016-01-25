@@ -12,7 +12,7 @@ am now using Spacemacs full-time.
 
 <!--more-->
 
-## You’re using a starter kit, why?! ##
+## You’re using a starter kit, why⁈ ##
 
 > Spacemacs is beautiful.
 
