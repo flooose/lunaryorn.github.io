@@ -97,7 +97,8 @@ task verify: ['verify:jekyll',
               'verify:travis',
               'verify:ghpages',
               'verify:scss',
-              'verify:ruby']
+              'verify:ruby',
+              'verify:markdown']
 
 namespace :build do
   CLOBBER << '_site'
