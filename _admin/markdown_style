@@ -31,3 +31,6 @@ exclude_rule 'MD022'
 # Do not enforce line length limits, because these conflict with Kramdown tables
 # which do not allow hard wraps
 exclude_rule 'MD013'
+
+# Allow trailing punctuation in headers
+exclude_rule 'MD026'
