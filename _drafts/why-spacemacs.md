@@ -1,15 +1,14 @@
 ---
-title: My journey to Spacemacs
+title: Why Spacemacs?
+category: emacs
 ---
 
-Over the last six months I was slowly gravitating towards Spacemacs.  About a a
+Over the last six months I was slowly gravitating towards Spacemacs.  About a
 month ago I finally couldn’t resist its gravitational pull anymore, and
-abandoned my hand-crafted, elaborate, 3k lines personal Emacs configuration in
-favour of Spacemacs.
-
-In this post I’ll write about why I chose Spacemacs, what switching to a
-entirely different Emacs configuration was like, and how that whole thing feels
-now.
+abandoned my hand-crafted, elaborate, >3k lines personal Emacs configuration and
+switched to Spacemacs.  In this post I’ll share why I think that Spacemacs is an
+awesome project, and why I’m happy that I’ve made it through a bumpy start and
+am now using Spacemacs full-time.
 
 <!--more-->
 
@@ -90,23 +89,40 @@ are then enabled in the package configuration of a layer.
 
 ## Dark corners ##
 
-TODO
+Even the best software has it’s dark corners, and there are some bad places in
+Spacemacs as well.  Like all large project that suck up many external
+contributions Spacemacs suffers from a wildly varying quality, and some pieces
+of code are downright bad.  Having seen some of these places I can’t help but
+wonder how fast Spacemacs is accumulating technical debt, and whether the
+project provides the structures and processes to mitigate this.
 
-## But what about VIM bindings? ##
+## But VIM? ##
 
-Many people choose
+Spacemacs’ banner brags about Spacemacs being “Emacs *and* VIM”, and many people
+seem to choose Spacemacs for its VIM bindings only.  The work that Spacemacs has
+done on providing a comprehensive and consistent set of VIM bindings for all
+its included packages and modes is truly amazing, and absolutely brings Evil
+Mode to the next level.
 
-I know that many people choose Spacemacs for its VIM bindings but for me that
-wasn’t a big incentive.  With Spacemacs I learned to enjoy modal editing
-again—I have been using VIM for quite some time in the past—and I like the
-feeling of “programming” text instead of just editing it.  But it’s not that
-important to me.  I didn’t miss modal editing when coming back to Emacs from VIM
-and I have no problems with the Emacs way of editing either.
+> VIM bindings are nice, but…
 
-## How did I switch and what was it like? ##
+To me, however, the VIM part was no incentive.  I’ve been using VIM for quite
+some time in the past and I’m happy to have modal editing again, but it wasn’t
+what sold Spacemacs to me.
 
-I didn’t just jump head-first into cold water.  Re-training muscle memory for
-new commands and new key sequences takes time.
+> …Spacemacs’ importance goes far far beyond bindings.
 
-Running parallel, switching back and forth, not sure whether staying with Spacemacs
+I think the work and the value of Spacemacs go far, far beyond just VIM
+bindings, and its really selling point and its major contribution to the Emacs
+universe is its design and the layer system in particular, and the unique focus
+on building an integrated and consistent product that immediately delivers value
+to end users; a focus that many, many Emacs Lisp projects are entirely missing.
 
+> Spacemacs puts the user first.
+
+I admire Spacemacs for trying to put the user first, however hard that is, and
+thinking about user’s needs first.  This mindset leads to the great UI, to an
+incredibly consistent user experience, and to superb documentation, things that
+many other Emacs Lisp projects are missing.
+
+I ❤️ Spacemacs!
