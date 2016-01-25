@@ -77,7 +77,11 @@ namespace :verify do
     t.patterns = ['Rakefile']
   end
 
-  MARKDOWN_SOURCES = FileList.new('**/*.md') do |fs|
+  MARKDOWN_SOURCES = FileList.new('*.md') do |fs|
+    # Pages
+    fs.include('pages/*.md')
+    # Drafts and posts
+    fs.include('_posts/*.md', '_drafts/*.md')
     # Exclude all older posts from verification, until we migrate them to our
     # markdown style.
     fs.exclude('_posts/2013-*', '_posts/2014-*', '_posts/2015-*')
