@@ -3,16 +3,19 @@ title: Why Spacemacs?
 category: emacs
 ---
 
-Over the last six months I was slowly gravitating towards Spacemacs.  About a
-month ago I finally couldn’t resist its gravitational pull anymore, and
-abandoned my hand-crafted, elaborate, >3k lines personal Emacs configuration and
-switched to Spacemacs.  In this post I’ll share why I think that Spacemacs is an
-awesome project, and why I’m happy that I’ve made it through a bumpy start and
-am now using Spacemacs full-time.
+Over the last six months I was slowly gravitating towards [Spacemacs][], an
+Emacs distribution that aims to combine Emacs with VIM.  About a month ago
+I finally couldn’t resist its gravitational pull anymore, and abandoned my
+hand-crafted, elaborate, >3k lines personal Emacs configuration and switched to
+Spacemacs.  In this post I’ll share why I think that Spacemacs is an awesome
+project, and why I’m happy that I’ve made it through a bumpy start and am now
+using Spacemacs full-time.
 
 <!--more-->
 
-## You’re using a starter kit, why⁈ ##
+[Spacemacs]: http://spacemacs.org ""
+
+## You’re using a starter kit, why⁈##
 
 > Spacemacs is beautiful.
 
@@ -36,11 +39,11 @@ from one single piece.
 
 As bright as Spacemacs shines on the surface, as solid are it’s underpinnings
 and foundations, notably it’s excellent, well-designed and powerful
-configuration system called “layers”.  A layer groups related packages and
-configuration into a single unit that provides a specific feature.  Each layer
-can be activated as a whole.  For instance the `git` layer provides support for
-the Git version control system and enables the popular [Magit][] extension and a
-couple of other Git-related packages.
+[configuration system called “layers”][layers].  A layer groups related packages
+and configuration into a single unit that provides a specific feature.  Each
+layer can be activated as a whole.  For instance the `git` layer provides
+support for the Git version control system and enables the popular [Magit][]
+extension and a couple of other Git-related packages.
 
 > Layers are transparent.  They _never_ get in your way.
 
@@ -87,6 +90,8 @@ are then enabled in the package configuration of a layer.
 [evil-magit]: https://github.com/justbur/evil-magit
 [built-in-layers]: http://spacemacs.org/layers/LAYERS.html
 
+[layers]: http://spacemacs.org/doc/LAYERS.html ""
+
 ## Dark corners ##
 
 Even the best software has it’s dark corners, and there are some bad places in
@@ -121,8 +126,10 @@ to end users; a focus that many, many Emacs Lisp projects are entirely missing.
 > Spacemacs puts the user first.
 
 I admire Spacemacs for trying to put the user first, however hard that is, and
-thinking about user’s needs first.  This mindset leads to the great UI, to an
-incredibly consistent user experience, and to superb documentation, things that
+thinking about user’s needs first.  This mindset is what leads to an awesome UI,
+to a great user experience, and to [superb documentation][docs], things that
 many other Emacs Lisp projects are missing.
 
 I ❤️ Spacemacs!
+
+[docs]: http://spacemacs.org/doc/DOCUMENTATION.html ""
