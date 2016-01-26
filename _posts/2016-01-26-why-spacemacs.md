@@ -130,6 +130,6 @@ thinking about user’s needs first.  This mindset is what leads to an awesome 
 to a great user experience, and to [superb documentation][docs], things that
 many other Emacs Lisp projects are missing.
 
-I ❤️ Spacemacs!
+I ❤ Spacemacs!
 
 [docs]: http://spacemacs.org/doc/DOCUMENTATION.html
