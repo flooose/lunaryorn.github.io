@@ -1,6 +1,7 @@
 ---
 title: Unbreaking Marmalade
 category: emacs
+published: false
 ---
 
 **Update** *(June 16, 2014)*: Nic Ferrier's

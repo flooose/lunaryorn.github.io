@@ -1,6 +1,7 @@
 ---
 title: Thoughts on elmarmalade
 category: emacs
+published: false
 ---
 
 On [May 19th][post], Nic Ferrier switched the grand old [Marmalade][] to his

@@ -1,5 +1,6 @@
 ---
 title: On Uberspace now
+published: false
 ---
 
 A few days ago I moved this site from [Github Pages][] to [Uberspace][], a
