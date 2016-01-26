@@ -23,17 +23,17 @@ What got me attracted to Spacemacs initially was the beautiful user interface,
 particularly the beautiful sleek mode line.  I love beautiful things, and the
 Spacemacs UI was just so much more beautiful than all that I had managed to
 achieve in my own configuration.  Even as I write this post in Spacemacs, after
-almost six months of using it eight hours a day for work, I still enjoy at its
+almost six months of using it eight hours a day for work, I still marvel at its
 beauty.
 
 > Spacemacs is not a starter kit—it’s an editor on its own!
 
-What made me stay with Spacemacs finally was not its beauty, though; it was the
-revelation that Spacemacs—unlike Prelude, Graphene and similar projects—is *not*
-a “starter kit”.  On the contrary: Spacemacs is actually an editor on its own,
-with a special focus on a beautiful user interface, great user experience and
-deep integration of packages.  It feels like a perfectly integrated product made
-from one single piece.
+What made me stay with Spacemacs eventually was not its beauty, though; it was
+the revelation that Spacemacs—unlike Prelude, Graphene and similar projects—is
+*not* a “starter kit”.  On the contrary: Spacemacs is actually an editor on its
+own, with a special focus on a beautiful user interface, great user experience
+and deep integration of packages.  It feels like a perfectly integrated product
+made from one single piece.
 
 ## Layers below ##
 
@@ -41,17 +41,18 @@ As bright as Spacemacs shines on the surface, as solid are it’s underpinnings
 and foundations, notably it’s excellent, well-designed and powerful
 [configuration system called “layers”][layers].  A layer groups related packages
 and configuration into a single unit that provides a specific feature.  Each
-layer can be activated as a whole.  For instance the `git` layer provides
-support for the Git version control system and enables the popular [Magit][]
-extension and a couple of other Git-related packages.
+layer is activated as a whole.  The `git` layer for instance provides support
+for the Git version control system and enables the popular [Magit][] extension
+and a couple of other Git-related packages.  Activating this layer enables all
+Git features at once, without any further customisation required.
 
 > Layers are transparent.  They _never_ get in your way.
 
-But—and this is what’s so particularly awesome about layers—layers are not
-opaque.  A layer is not a “take all or nothing” thing.  Each individual package
-within a layer can be disabled in isolation without breaking the layer at large.
-It’s even possible to “steal” a package in another layer, thus using a layer,
-but with an entirely different configuration for a specific package.
+Nonetheless—and this is what’s so particularly awesome—layers are not opaque.
+A layer is not a “take all or nothing” thing.  Each individual package within a
+layer can be disabled in isolation without breaking the layer at large.
+It’s even possible to “steal” a package from a layer, i.e. to use a layer but
+with an entirely different configuration for one specific package.
 
 > Layers enable horizontal *and* vertical customisation.
 
@@ -94,11 +95,11 @@ are then enabled in the package configuration of a layer.
 ## Dark corners ##
 
 Even the best software has it’s dark corners, and there are some bad places in
-Spacemacs as well.  Like all large project that suck up many external
+Spacemacs as well.  Like all large projects that suck up many external
 contributions Spacemacs suffers from a wildly varying quality, and some pieces
 of code are downright bad.  Having seen some of these places I can’t help but
 wonder how fast Spacemacs is accumulating technical debt, and whether the
-project provides the structures and processes to mitigate this.
+project provides the structures and processes to mitigate this problem.
 
 ## But VIM? ##
 
@@ -106,21 +107,21 @@ Spacemacs’ banner brags about Spacemacs being “Emacs *and* VIM”, and many 
 seem to choose Spacemacs for its VIM bindings only.  The work that Spacemacs has
 done on providing a comprehensive and consistent set of VIM bindings for all
 its included packages and modes is truly amazing, and absolutely brings Evil
-Mode to the next level.
+Mode to the next level, but Spacemacs goes far beyond being VIM.
 
 > VIM bindings are nice, but…
 
-To me, however, the VIM part was no incentive.  I’ve been using VIM for quite
-some time in the past and I’m happy to have modal editing again, but it wasn’t
-what sold Spacemacs to me.
+To me the VIM part was no incentive at all.  I had been using VIM for quite some
+time in the past and I’m happy to have modal editing again, but it wasn’t what
+sold Spacemacs to me.
 
 > …Spacemacs’ importance goes far far beyond bindings.
 
-I think the work and the value of Spacemacs go far, far beyond just VIM
-bindings, and its really selling point and its major contribution to the Emacs
-universe is its design and the layer system in particular, and the unique focus
-on building an integrated and consistent product that immediately delivers value
-to end users; a focus that many, many Emacs Lisp projects are entirely missing.
+I think the work and the value of Spacemacs go far, far beyond VIM bindings, and
+its real selling point and major contribution to the Emacs universe is its
+design (the layer system in particular), and the unique focus on building an
+integrated and consistent product that immediately delivers value to end users;
+a focus that many, many Emacs Lisp projects are entirely missing.
 
 > Spacemacs puts the user first.
 
