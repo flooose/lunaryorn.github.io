@@ -15,7 +15,7 @@ using Spacemacs full-time.
 
 [Spacemacs]: http://spacemacs.org
 
-## You’re using a starter kit, why⁈##
+## You’re using a starter kit, why⁈ ##
 
 > Spacemacs is beautiful.
 
