@@ -26,11 +26,11 @@
 
 @import 'paragraph-space';
 
-$main-font: 'Vollkorn', serif;
+$main-font: 'Vollkorn', emoji, serif;
 $main-color: #444;
 $font-size: 16px;
 
-$sans-font: 'Lato', sans-serif;
+$sans-font: 'Lato', emoji, sans-serif;
 $sans-font-size: .93em;
 
 $mono-font: 'Source Code Pro', monospace;
