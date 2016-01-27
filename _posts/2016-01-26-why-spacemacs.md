@@ -3,6 +3,12 @@ title: Why Spacemacs?
 category: emacs
 ---
 
+**Update**: I really like Spacemacs, and if you like the following post
+I recommend that you try it, but I absolutely encourage to **stay away** from
+Spacemacs the project, as they [refuse to define a Code of Conduct][coc].
+
+---
+
 Over the last six months I was slowly gravitating towards [Spacemacs][], an
 Emacs distribution that aims to combine Emacs with VIM.  About a month ago
 I finally couldn’t resist its gravitational pull anymore, and abandoned my
@@ -10,6 +16,8 @@ hand-crafted, elaborate, >3k lines personal Emacs configuration and switched to
 Spacemacs.  In this post I’ll share why I think that Spacemacs is an awesome
 project, and why I’m happy that I’ve made it through a bumpy start and am now
 using Spacemacs full-time.
+
+[coc]: https://github.com/syl20bnr/spacemacs/pull/3484
 
 <!--more-->
 
@@ -105,13 +113,13 @@ project provides the structures and processes to mitigate this problem.
 
 Another very dark corner is the lack of a Code of Conduct, which is just sad in
 a project of this size and importance.  Even worse is the
-[apparent unwillingness](https://github.com/syl20bnr/spacemacs/pull/3484) to
-change that: The head maintainer actively spoke out *against* a Code of Conduct,
-and the whole issue seems to lack traction, given that it’s been open for almost
-three months despite supposedly having “high priority”.  It’s so disappointing
-to see that the discussion centers around to usual “haters gonna hate” style of
-arguments which entirely and utterly fails to actually touch the problem that
-Codes of Conduct try to address.
+[apparent unwillingness][coc] to change that: The head maintainer actively spoke
+out *against* a Code of Conduct, and the whole issue seems to lack traction,
+given that it’s been open for almost three months despite supposedly having
+“high priority”.  It’s so disappointing to see that the discussion centers
+around to usual “haters gonna hate” style of arguments which entirely and
+utterly fails to actually touch the problem that Codes of Conduct try to
+address.
 
 To me this casts doubt on the governance of Spacemacs as a project and truly
 puts me off contributing any more, now that [I fixed the worst issues][prs]
