@@ -1,6 +1,10 @@
 ---
 title: Why Spacemacs?
 category: emacs
+excerpt: |
+  Why I think that Spacemacs is awesome, why abandoned my elaborate hand-crafted
+  Emacs configuration and am a happy Spacemacs user, and why you shouldn’t
+  contribute to Spacemacs.
 ---
 
 **Update**: I really like Spacemacs, and if you like the following post
