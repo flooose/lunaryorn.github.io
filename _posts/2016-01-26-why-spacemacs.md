@@ -2,15 +2,8 @@
 title: Why Spacemacs?
 category: emacs
 excerpt: |
-  Why I think that Spacemacs is awesome, why abandoned my elaborate hand-crafted
-  Emacs configuration and am a happy Spacemacs user, and why you shouldn’t
-  contribute to Spacemacs.
----
-
-**Update**: I really like Spacemacs, and if you like the following post
-I recommend that you try it, but I absolutely encourage to **stay away** from
-Spacemacs the project, as they [refuse to define a Code of Conduct][coc].
-
+  Why I think that Spacemacs is awesome, and why abandoned my elaborate
+  hand-crafted Emacs configuration and am a happy Spacemacs user.
 ---
 
 Over the last six months I was slowly gravitating towards [Spacemacs][], an
@@ -113,23 +106,12 @@ of code are downright bad.  Having seen some of these places I can’t help but
 wonder how fast Spacemacs is accumulating technical debt, and whether the
 project provides the structures and processes to mitigate this problem.
 
-## No Code of Conduct here ##
-
-Another very dark corner is the lack of a Code of Conduct, which is just sad in
-a project of this size and importance.  Even worse is the
-[apparent unwillingness][coc] to change that: The head maintainer actively spoke
-out *against* a Code of Conduct, and the whole issue seems to lack traction,
-given that it’s been open for almost three months despite supposedly having
-“high priority”.  It’s so disappointing to see that the discussion centers
-around to usual “haters gonna hate” style of arguments which entirely and
-utterly fails to actually touch the problem that Codes of Conduct try to
-address.
-
-To me this casts doubt on the governance of Spacemacs as a project and truly
-puts me off contributing any more, now that [I fixed the worst issues][prs]
-I encountered.
-
-[prs]: https://github.com/syl20bnr/spacemacs/pulls?q=is%3Apr+author%3Alunaryorn+is%3Aclosed
+Another dark corner is the lack of a Code of Conduct, which is just sad in a
+project of this size and importance.  There’s hope though;
+[the maintainer has promised][coc] that there will be a Code of Conduct.  I hope
+that they get it right, and I’m looking forward to again contribute to Spacemacs
+in an environment and culture that provides a safe and welcoming space to *all*
+contributors.
 
 ## But VIM? ##
 
