@@ -9,10 +9,14 @@ excerpt: |
 ## Tooling ##
 
 This blog is a static website built with pure [Jekyll][] on [Github Pages][].
-[html-proofer][] checks the generated site for invalid HTML and other mistakes.
+[html-proofer][] checks the generated site for invalid HTML and other mistakes;
+[SCSS-Lint][] and [markdownlint][] help me maintain consistent styles for SCSS
+and Markdown respectively.
 
 [Jekyll]: http://jekyllrb.com
 [html-proofer]: https://github.com/gjtorikian/html-proofer
+[SCSS-Lint]: https://github.com/brigade/scss-lint
+[markdownlint]: https://github.com/mivok/markdownlint
 
 ## Style and fonts ##
 
