@@ -15,7 +15,6 @@ author:
 
 # Build settings
 environment: production
-markdown: redcarpet
 timezone: "Europe/Berlin"
 encoding: "utf-8"
 exclude:
@@ -28,6 +27,7 @@ format:
   date_long: "%B %-d, %Y"
   date_short: "%b %d, %y"
 excerpt_separator: "<!--more-->"
+markdown: kramdown
 
 gems:
   - jekyll-seo-tag
@@ -35,12 +35,13 @@ gems:
 sass:
   style: compressed
 
-redcarpet:
-  extensions:
-    - no_intra_emphasis
-    - tables
-    - footnotes
-    - with_toc_data
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts: {}
+  # Github Flavoured Markdown with fancy fenced code blocks, but without the
+  # stupid hard-wrap rule, please.
+  input: GFM
+  hard_wrap: false
 
 defaults:
   - scope:
