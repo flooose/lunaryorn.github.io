@@ -122,7 +122,7 @@ Comments
 Syntactic fontification also handles comments.  Puppet has two types of
 comments:
 
-- Shell style comments, starting with a dash `#` and ending with a new line
+- Shell style comments, starting with a hash `#` and ending with a new line
 - C-style comments enclosed in `/*` and `*/`
 
 The first kind is easy:
@@ -216,7 +216,7 @@ characters, or on a specific position on a line, syntax tables are out of scope.
 In such cases, you need to implement fontification in a different way.  Let's
 briefly look at two common cases.
 
-In many configuration file types the dash starts a comment only when at the
+In many configuration file types the hash starts a comment only when at the
 beginning of a line or preceded by whitespace only.  A common example is
 `.gitignore`.  Since the syntax of such configuration files is very simple
 normally, it's usually sufficient to simply disable syntactic fontification with
